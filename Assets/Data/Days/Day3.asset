@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59edd873557e89488dca74978f5953c, type: 3}
+  m_Name: Day3
+  m_EditorClassIdentifier: Assembly-CSharp::DayData
+  positionTitle: Head of Cybersecurity
+  jobDescription: Protect Synergix from hackers, viruses, and Dale clicking emails
+    that say 'YOU WON'.
+  bossMemo: "Bad news. Someone hacked our website and changed the logo to a picture
+    of a duck.\n\nWe need a Head of Cybersecurity, fast. Also, Competitor Corp\u2122
+    has been 'sending people over'. Be careful out there.\n\n- Dale"
+  newRules:
+  - No applicants currently employed by a competitor.
+  - Do not hire anyone who has hacked Synergix. Even 'as a joke'.
+  applicants:
+  - {fileID: 11400000, guid: 0d91e578e282a0345b054114f4795224, type: 2}
+  - {fileID: 11400000, guid: e9acdf73531ede84ca048820ef059d84, type: 2}
+  - {fileID: 11400000, guid: dd261d271e2f6904386aa65f42993b8d, type: 2}

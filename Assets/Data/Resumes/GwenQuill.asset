@@ -1,0 +1,246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: GwenQuill
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Gwen Quill
+  body: '<b>GWEN QUILL</b>
+
+    Applying for: Social Media Manager
+
+
+    <b>EXPERIENCE</b>
+
+    Social
+    Media Manager - Crumb & Co. Bakery
+
+    {dates}
+
+    Grew the bakery''s account
+    from {growth}
+
+    {viral}
+
+
+    <b>SKILLS</b>
+
+    {skill_writing}, photography
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: dates
+    text: Apr 2022 - Present
+    isSuspicious: 0
+    category: 1
+    designerNote: 
+    suspiciousQuestion:
+      question: Why leave the bakery?
+      answer: I love it, but I can't make the croissants {b_famous}. I need a bigger
+        challenge.
+      demeanor: 1
+      phrases:
+      - id: b_famous
+        text: any more famous
+        isContradiction: 0
+        callOutResponse: There's a croissant with its own fan club. I'm not joking.
+          It has a newsletter.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Four years at the bakery!
+      answer: Four years. I've gained four pounds. Totally worth it.
+      demeanor: 1
+      phrases: []
+  - id: growth
+    text: 200 to 40,000 followers
+    isSuspicious: 0
+    category: 0
+    designerNote: True, and she proves it. A good mark here is correct.
+    suspiciousQuestion:
+      question: 200 to 40,000 followers. Can you prove it?
+      answer: Sure! I have the {g_graph} on my phone. Most of the growth came from
+        {g_dog}.
+      demeanor: 1
+      phrases:
+      - id: g_graph
+        text: monthly analytics
+        isContradiction: 0
+        callOutResponse: Here. See the big spike? That's the dog.
+        callOutDemeanor: 1
+      - id: g_dog
+        text: the baker's dog
+        isContradiction: 0
+        callOutResponse: His name is Muffin. He wears a tiny chef hat. The internet
+          lost its mind.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: 40,000 followers is great growth.
+      answer: Thank you! All real people. Mostly grandmas. Grandmas love bread.
+      demeanor: 1
+      phrases: []
+  - id: viral
+    text: 'Viral post: ''Croissant or Cat?'' (2.1M views)'
+    isSuspicious: 0
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: '''Croissant or Cat?'' really got 2.1 million views?'
+      answer: It did! Photos of croissants and cats that look the same. Some of them
+        {c_hard}.
+      demeanor: 1
+      phrases:
+      - id: c_hard
+        text: were genuinely hard to tell apart
+        isContradiction: 0
+        callOutResponse: There's one we still aren't sure about. We don't talk about
+          it.
+        callOutDemeanor: 2
+    goodQuestion:
+      question: I love 'Croissant or Cat?'.
+      answer: Thank you! The sequel is 'Bagel or Dog'. It's in development.
+      demeanor: 1
+      phrases: []
+  - id: skill_writing
+    text: Copywriting
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: Is your writing actually any good?
+      answer: 'I {w_wrote} on our bags: ''Butter believe it.'''
+      demeanor: 1
+      phrases:
+      - id: w_wrote
+        text: wrote the slogan
+        isContradiction: 0
+        callOutResponse: Sales went up 20%. People love a pun.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: A good writer! Rare.
+      answer: I also write a newsletter called 'Knead to Know'. I'm sorry. I can't
+        stop.
+      demeanor: 1
+      phrases: []
+  - id: ref
+    text: Rosa Crumb, owner of Crumb & Co.
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: Is Rosa Crumb a real person?
+      answer: Very real. She {r_bread} if you call her.
+      demeanor: 1
+      phrases:
+      - id: r_bread
+        text: will try to sell you bread
+        isContradiction: 0
+        callOutResponse: She can't help it. She sold bread to a mailman every day
+          for 15 years.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Will Rosa speak well of you?
+      answer: She cried when I said I was leaving. Then she gave me a cake. Then
+        she cried again.
+      demeanor: 2
+      phrases: []
+  referenceLetter: 'To whom it may concern,
+
+
+    Gwen {rl_grew} our bakery''s following
+    and {rl_cake}. She posts with care.
+
+
+    Would I hire her again? In a heartbeat.
+    Come by and try the sourdough.
+
+
+    Rosa Crumb
+
+    Crumb & Co. Bakery'
+  referenceLetterClaims:
+  - id: rl_grew
+    text: tripled
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_cake
+    text: left me a cake the day she resigned
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Rosa Crumb:</b> Crumb and Co! Would you like a loaf?
+
+
+    <b>You:</b>
+    I''m calling about Gwen Quill.
+
+
+    <b>Rosa Crumb:</b> Gwen! {rc_cried}. Her
+    posts sold out the croissants every Saturday. Are you sure about the loaf? It''s
+    still warm.'
+  referenceCheckClaims:
+  - id: rc_cried
+    text: I cried when she left
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: -1464757761615561959, guid: 95bcd907357e9de4ba02f6b103cc2301, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: -1713209465216054990, guid: 95bcd907357e9de4ba02f6b103cc2301, type: 3}
+  - demeanor: 2
+    sprite: {fileID: 6612586456501885330, guid: 95bcd907357e9de4ba02f6b103cc2301, type: 3}
+  - demeanor: 3
+    sprite: {fileID: 4836865726967940459, guid: 95bcd907357e9de4ba02f6b103cc2301, type: 3}
+  - demeanor: 4
+    sprite: {fileID: -8245822782409327414, guid: 95bcd907357e9de4ba02f6b103cc2301, type: 3}
+  - demeanor: 5
+    sprite: {fileID: -4595346922136083628, guid: 95bcd907357e9de4ba02f6b103cc2301, type: 3}
+  portraitTint: {r: 0.95, g: 0.85, b: 1, a: 1}
+  hiredMemo: Gwen's first post, 'Office Chair or Dale?', got 3 million views from
+    real humans. We have 80,000 followers and the office plant has a fan club. Dale
+    has been recognized at the grocery store. He is thrilled.
+  hirePerformance: 2
+  rejectedMemo: Gwen Quill went back to the bakery. Their new post, 'Is This Synergix's
+    Logo or a Sad Duck?', got 4 million views.

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59edd873557e89488dca74978f5953c, type: 3}
+  m_Name: Day4
+  m_EditorClassIdentifier: Assembly-CSharp::DayData
+  positionTitle: Social Media Manager
+  jobDescription: Run Synergix's social media. Make us look cool. We are not cool.
+    That is the challenge.
+  bossMemo: 'Our social media account has 11 followers. Four of them are my mom.
+
+
+    Corporate
+    wants us to ''go viral'' and ''connect with the youth''. Please hire someone
+    who knows what a meme is.
+
+
+    Also, after a recent ''incident'' involving the
+    night shift and a ham, HR has added a rule about how many people an employee
+    can be.
+
+
+    - Dale'
+  newRules:
+  - Follower counts and 'viral' claims must be confirmed in the interview.
+  - Each applicant must be exactly one (1) human.
+  applicants:
+  - {fileID: 11400000, guid: 3cd04c7e230d1514aa741efe83a099bb, type: 2}
+  - {fileID: 11400000, guid: 5a042cf7d20a43d4e9166b769518adfe, type: 2}
+  - {fileID: 11400000, guid: f153accdfb1252d41bb2e178e5654cef, type: 2}

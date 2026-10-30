@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59edd873557e89488dca74978f5953c, type: 3}
+  m_Name: Day5
+  m_EditorClassIdentifier: Assembly-CSharp::DayData
+  positionTitle: Vice President of Everything
+  jobDescription: Lead the company into the future. Make big decisions. Attend many
+    meetings. Must not cause the downfall of civilization.
+  bossMemo: 'Final day! Our VP retired yesterday to ''live on a boat and never answer
+    an email again''. We need a new Vice President of Everything.
+
+
+    Also... between
+    you and me... the CEO''s nephew Tanner is applying. The CEO would be VERY happy
+    if Tanner got the job. Very happy. Do with that what you will.
+
+
+    Oh, and
+    HR added a rule because of what happened in 2019. We don''t talk about 2019.
+
+
+    -
+    Dale'
+  newRules:
+  - VP candidates must have real management experience.
+  - Absolutely no time travelers. We've been over this.
+  applicants:
+  - {fileID: 11400000, guid: 7a97285789c5414488dc053e5e2cab4f, type: 2}
+  - {fileID: 11400000, guid: d6aa4dd0e5200494684808c6affa29e9, type: 2}
+  - {fileID: 11400000, guid: f72da43dc212ed348b81e2040646ac11, type: 2}

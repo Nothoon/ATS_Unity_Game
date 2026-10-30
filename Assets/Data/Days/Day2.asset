@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59edd873557e89488dca74978f5953c, type: 3}
+  m_Name: Day2
+  m_EditorClassIdentifier: Assembly-CSharp::DayData
+  positionTitle: Office Manager
+  jobDescription: Keep the office running. Order supplies. Stop the fridge from becoming
+    a biohazard.
+  bossMemo: 'Today we need an Office Manager. The last one went to ''get printer
+    toner'' in March and never came back. We found her desk covered in sticky notes
+    that just say ''NO''.
+
+
+    HR added rules about certificates. Apparently someone
+    ''certified'' themselves with a home printer.
+
+
+    - Dale'
+  newRules:
+  - Certifications must list a certificate ID number.
+  - '''Senior'', ''Lead'', ''Chief'' or fancier titles require 5+ years of experience.'
+  applicants:
+  - {fileID: 11400000, guid: 3b1f45db29a2a8d48891c57da83da5c2, type: 2}
+  - {fileID: 11400000, guid: 03040eedb8d44b64d93b000697f78b19, type: 2}
+  - {fileID: 11400000, guid: 8cf82067fb8a8d342b784b9693ebc3e6, type: 2}

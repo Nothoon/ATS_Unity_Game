@@ -1,0 +1,294 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: KyleBrennan
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Kyle "xX_Sh4d0w_Xx" Brennan
+  body: '<b>xX_Sh4d0w_Xx</b>
+
+    (legal name: Kyle Brennan)
+
+    Applying for: Head
+    of Cybersecurity
+
+
+    <b>EXPERIENCE</b>
+
+    {title}
+
+    {dates}
+
+
+    <b>NOTABLE
+    WORK</b>
+
+    {hack_pentagon}
+
+    {hack_synergix}
+
+
+    <b>SKILLS</b>
+
+    {skill_typing}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: title
+    text: Freelance Elite Hacker
+    isSuspicious: 1
+    category: 2
+    designerNote: '''Elite'' title with 2 years of experience breaks rule 5.'
+    suspiciousQuestion:
+      question: '''Elite Hacker'' with two years of experience?'
+      answer: Elite is a {e_mindset}. I've been hacking since I was {e_age}.
+      demeanor: 1
+      phrases:
+      - id: e_mindset
+        text: mindset
+        isContradiction: 0
+        callOutResponse: It's about the energy. You either have it or you don't.
+          I have it.
+        callOutDemeanor: 1
+      - id: e_age
+        text: 12
+        isContradiction: 0
+        callOutResponse: I hacked my mom's tablet to get more screen time. A legend
+          was born.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Freelance elite hacker. Cool.
+      answer: Very cool. I wear sunglasses indoors. For security.
+      demeanor: 1
+      phrases: []
+  - id: dates
+    text: 2024 - Present
+    isSuspicious: 0
+    category: 1
+    designerNote: 
+    suspiciousQuestion:
+      question: Who have you freelanced for?
+      answer: '{f_clients}. Mostly people who forgot their passwords.'
+      demeanor: 0
+      phrases:
+      - id: f_clients
+        text: Mostly my grandma
+        isContradiction: 0
+        callOutResponse: She's a very demanding client. Facebook keeps logging her
+          out.
+        callOutDemeanor: 0
+    goodQuestion:
+      question: Two years freelancing. Good clients?
+      answer: The best. They pay in cookies.
+      demeanor: 1
+      phrases: []
+  - id: hack_pentagon
+    text: Hacked the Pentagon (allegedly)
+    isSuspicious: 1
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: You hacked the Pentagon?
+      answer: Allegedly. I {p_guessed} 'password123'. It didn't work. But I tried,
+        which is basically hacking.
+      demeanor: 1
+      phrases:
+      - id: p_guessed
+        text: guessed their password was
+        isContradiction: 0
+        callOutResponse: The point is the attempt. The FBI didn't even notice me.
+          That's how good I am.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Pentagon-level skills!
+      answer: You could say that. Please don't say that out loud, though.
+      demeanor: 2
+      phrases: []
+  - id: hack_synergix
+    text: Hacked Synergix Global Solutions (twice, you're welcome)
+    isSuspicious: 1
+    category: 0
+    designerNote: Hacking Synergix breaks rule 7.
+    suspiciousQuestion:
+      question: You hacked US?
+      answer: Twice! I changed your logo to {s_duck}. Free security testing.
+      demeanor: 1
+      phrases:
+      - id: s_duck
+        text: a duck
+        isContradiction: 0
+        callOutResponse: It's a very majestic duck. Your old logo was worse.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Thanks for finding our weaknesses, I guess.
+      answer: No problem! Your admin password is 'Dale1'. You should change that.
+        I didn't change it. Or did I.
+      demeanor: 1
+      phrases: []
+  - id: skill_typing
+    text: Types 300 words per minute
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: 300 words per minute? Really?
+      answer: When I'm hacking, yes. I {t_keyboards}.
+      demeanor: 1
+      phrases:
+      - id: t_keyboards
+        text: use two keyboards at once
+        isContradiction: 0
+        callOutResponse: It doubles the hacking. Basic math.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: A fast typer. Great.
+      answer: 'The fastest. Watch: asdfjkl. See? Hacked.'
+      demeanor: 1
+      phrases: []
+  - id: ref
+    text: My Discord friends
+    isSuspicious: 1
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: Your references are 'my Discord friends'?
+      answer: They're very professional. Some of them are {d_age}.
+      demeanor: 2
+      phrases:
+      - id: d_age
+        text: almost 14
+        isContradiction: 1
+        callOutResponse: ...They are VERY mature for their age. Please don't tell
+          their parents.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Can your references be contacted?
+      answer: Yeah, just join the server. The password is 'password'.
+      demeanor: 1
+      phrases: []
+  referenceLetter: 'yo,
+
+
+    hire xX_Sh4d0w_Xx he is {rl_good}. he {rl_hacked} the
+    school wifi in like 2 minutes and nobody ever found out.
+
+
+    signed,
+
+    {rl_sign}'
+  referenceLetterClaims:
+  - id: rl_good
+    text: the best hacker ever
+    isSuspicious: 1
+    category: 5
+    designerNote: Self-aggrandizing and unprofessional.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_hacked
+    text: hacked
+    isSuspicious: 1
+    category: 5
+    designerNote: Admits to unauthorized access.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_sign
+    text: DarkLord_Gamer_2012 (age 13)
+    isSuspicious: 1
+    category: 5
+    designerNote: A kid.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>DarkLord_Gamer_2012:</b> hello?? {rc_mom}.
+
+
+    <b>You:</b>
+    You''re the reference for Kyle?
+
+
+    <b>DarkLord_Gamer_2012:</b> yeah he''s
+    {rc_great}. he got us into a minecraft server we weren''t supposed to be on.'
+  referenceCheckClaims:
+  - id: rc_mom
+    text: mom said I can't talk to strangers
+    isSuspicious: 1
+    category: 5
+    designerNote: A child.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_great
+    text: super great
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: 2600354918824563675, guid: e735f22aaf0e78f4888b817dbe7dceea, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: 6967625032194618285, guid: e735f22aaf0e78f4888b817dbe7dceea, type: 3}
+  - demeanor: 2
+    sprite: {fileID: 3060507086420818946, guid: e735f22aaf0e78f4888b817dbe7dceea, type: 3}
+  - demeanor: 3
+    sprite: {fileID: -5687144337500631032, guid: e735f22aaf0e78f4888b817dbe7dceea, type: 3}
+  - demeanor: 4
+    sprite: {fileID: 4889215231252585739, guid: e735f22aaf0e78f4888b817dbe7dceea, type: 3}
+  - demeanor: 5
+    sprite: {fileID: 5845638946945135964, guid: e735f22aaf0e78f4888b817dbe7dceea, type: 3}
+  portraitTint: {r: 0.85, g: 1, b: 0.85, a: 1}
+  hiredMemo: Kyle locked the CEO out of his own email 'as a test'. It has been nine
+    days. The company logo is a duck again. Kyle has started calling himself the
+    'Duck Lord'. IT has asked for a restraining order.
+  hirePerformance: -2
+  rejectedMemo: Our company logo has been changed to a duck. A crying duck. No note,
+    but we know.

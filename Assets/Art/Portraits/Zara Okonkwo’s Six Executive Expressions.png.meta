@@ -1,0 +1,329 @@
+fileFormatVersion: 2
+guid: 0a7f3b98192ce634ebc6422c89fe0b97
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4017552507802409415
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_0"
+  - first:
+      213: 3522406400561916058
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_1"
+  - first:
+      213: -129560910845426107
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_2"
+  - first:
+      213: 6364356204780623018
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_3"
+  - first:
+      213: 3514946829364492864
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_4"
+  - first:
+      213: 1359960937941234935
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_5"
+  - first:
+      213: 2681323103463201259
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_6"
+  - first:
+      213: 1202739413468239903
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_7"
+  - first:
+      213: 6273762303967458163
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_8"
+  - first:
+      213: -4158689268153409787
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_9"
+  - first:
+      213: -683731019240293288
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_10"
+  - first:
+      213: -6799413568493377395
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_11"
+  - first:
+      213: 8466961878638076298
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_12"
+  - first:
+      213: 8257646185753804668
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_13"
+  - first:
+      213: -1665045192220609170
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_14"
+  - first:
+      213: -941565493190298063
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_15"
+  - first:
+      213: 7454215204595212930
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_16"
+  - first:
+      213: -6294613706878377912
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_17"
+  - first:
+      213: -8055298888334887858
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_18"
+  - first:
+      213: 1766366010406844713
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_19"
+  - first:
+      213: 3807814672983710657
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_20"
+  - first:
+      213: 8065561329942986690
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_21"
+  - first:
+      213: -5708774522710699546
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_22"
+  - first:
+      213: -8806502589073357465
+    second: "Zara Okonkwo\u2019s Six Executive Expressions_23"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Zara Okonkwo\u2019s Six Executive Expressions_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93625f1b749ce38c0800000000000000
+      internalID: -4017552507802409415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Zara Okonkwo\u2019s Six Executive Expressions_1"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a982e0475f912e030800000000000000
+      internalID: 3522406400561916058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Zara Okonkwo\u2019s Six Executive Expressions_2"
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 546484cb905b33ef0800000000000000
+      internalID: -129560910845426107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Zara Okonkwo\u2019s Six Executive Expressions_3"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4900a9f3cb25850800000000000000
+      internalID: 6364356204780623018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Zara Okonkwo\u2019s Six Executive Expressions_4"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04af7a0b48997c030800000000000000
+      internalID: 3514946829364492864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Zara Okonkwo\u2019s Six Executive Expressions_5"
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4f466844d8fd210800000000000000
+      internalID: 1359960937941234935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bb283c2edb14baa47b77c3cc6034091d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":2.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      "Zara Okonkwo\u2019s Six Executive Expressions_0": -4017552507802409415
+      "Zara Okonkwo\u2019s Six Executive Expressions_1": 3522406400561916058
+      "Zara Okonkwo\u2019s Six Executive Expressions_2": -129560910845426107
+      "Zara Okonkwo\u2019s Six Executive Expressions_3": 6364356204780623018
+      "Zara Okonkwo\u2019s Six Executive Expressions_4": 3514946829364492864
+      "Zara Okonkwo\u2019s Six Executive Expressions_5": 1359960937941234935
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

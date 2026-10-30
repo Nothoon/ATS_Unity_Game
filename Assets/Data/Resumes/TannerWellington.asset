@@ -1,0 +1,279 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: TannerWellington
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Tanner Wellington
+  body: '<b>TANNER WELLINGTON</b>
+
+    Applying for: Vice President of Everything
+
+
+    <b>EXPERIENCE</b>
+
+    {title}
+
+    {dates}
+
+
+    <b>EDUCATION</b>
+
+    {edu}
+
+
+    <b>SKILLS</b>
+
+    {skill_golf},
+    {skill_lead}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: title
+    text: Junior Vice Assistant to the CEO (my uncle)
+    isSuspicious: 1
+    category: 2
+    designerNote: No real management experience breaks rule 10.
+    suspiciousQuestion:
+      question: What did you do as Junior Vice Assistant?
+      answer: I {t_clubs}. And I {t_ideas}.
+      demeanor: 1
+      phrases:
+      - id: t_clubs
+        text: carried my uncle's golf clubs
+        isContradiction: 0
+        callOutResponse: Very heavy clubs. That's leadership.
+        callOutDemeanor: 1
+      - id: t_ideas
+        text: had many great ideas
+        isContradiction: 0
+        callOutResponse: Like a pool in the meeting room. Uncle said no. For now.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Working closely with the CEO is good experience.
+      answer: I'm very close to him. At Thanksgiving I sit right next to him.
+      demeanor: 1
+      phrases: []
+  - id: dates
+    text: Summer 2025 (8 weeks)
+    isSuspicious: 1
+    category: 1
+    designerNote: 
+    suspiciousQuestion:
+      question: You've only worked for eight weeks?
+      answer: Eight very intense weeks. And I only took {w_breaks}.
+      demeanor: 1
+      phrases:
+      - id: w_breaks
+        text: six weeks of vacation
+        isContradiction: 1
+        callOutResponse: Okay, two weeks of work. But they were VERY intense weeks.
+          I had a headache once.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Short but sweet.
+      answer: Exactly. Quality over quantity. Uncle says that about me a lot.
+      demeanor: 1
+      phrases: []
+  - id: edu
+    text: Business degree (purchased)
+    isSuspicious: 1
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: Your degree says '(purchased)'.
+      answer: All degrees are purchased. That's how {e_college}.
+      demeanor: 1
+      phrases:
+      - id: e_college
+        text: college works
+        isContradiction: 0
+        callOutResponse: My uncle bought me a degree and a building. The building
+          has my name on it.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: A business degree. Nice.
+      answer: It's framed in gold. Real gold. The degree itself is mostly paper.
+      demeanor: 1
+      phrases: []
+  - id: skill_golf
+    text: 'Golf (handicap: 40)'
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: Is golf really a job skill?
+      answer: It's THE skill. All the big deals happen on the golf course. I've made
+        {g_deals}.
+      demeanor: 0
+      phrases:
+      - id: g_deals
+        text: zero deals
+        isContradiction: 0
+        callOutResponse: Zero so far. But I've had a lot of nice lunches.
+        callOutDemeanor: 0
+    goodQuestion:
+      question: Golf is good for networking.
+      answer: Very good. I once lost a ball in a pond and a CEO helped me find it.
+        We're best friends now.
+      demeanor: 1
+      phrases: []
+  - id: skill_lead
+    text: Leadership (natural)
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: How have you shown leadership?
+      answer: I once led my friends to a pizza place. Everyone followed me. {l_lost}.
+      demeanor: 1
+      phrases:
+      - id: l_lost
+        text: We got lost for three hours
+        isContradiction: 0
+        callOutResponse: But we were together. That's leadership.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Natural leadership. Love it.
+      answer: Thank you. People say I was born to lead. My uncle says it. He's people.
+      demeanor: 1
+      phrases: []
+  - id: ref
+    text: Uncle Richard (CEO of Synergix)
+    isSuspicious: 1
+    category: 5
+    designerNote: Family reference breaks rule 3.
+    suspiciousQuestion:
+      question: Your reference is the CEO. Your uncle.
+      answer: Is that a problem? He said {u_problem}.
+      demeanor: 5
+      phrases:
+      - id: u_problem
+        text: it wouldn't be a problem
+        isContradiction: 0
+        callOutResponse: He also said you'd be 'very understanding'. Wink. He told
+          me to say wink.
+        callOutDemeanor: 5
+    goodQuestion:
+      question: The CEO recommends you. Hard to argue with that.
+      answer: Exactly. Uncle Richard says I'm the future of this company. He said
+        it at a wedding. He was very tired.
+      demeanor: 1
+      phrases: []
+  referenceLetter: 'To whom it may concern,
+
+
+    My nephew Tanner is {rl_future}
+    of this company. I say this as his {rl_family}, but also as a CEO.
+
+
+    He''s
+    got a great golf swing. Hire him.
+
+
+    Uncle Richard
+
+    CEO, Synergix'
+  referenceLetterClaims:
+  - id: rl_future
+    text: the future
+    isSuspicious: 1
+    category: 5
+    designerNote: Nepotism.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_family
+    text: uncle
+    isSuspicious: 1
+    category: 5
+    designerNote: Family reference, violates the manual.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Uncle Richard:</b> Richard speaking! Who''s this?
+
+
+    <b>You:</b>
+    I''m calling about Tanner.
+
+
+    <b>Uncle Richard:</b> {rc_golf}. He''s a great
+    kid. He''s coming to Thanksgiving. {rc_hire}.'
+  referenceCheckClaims:
+  - id: rc_golf
+    text: Tanner? Great golfer
+    isSuspicious: 1
+    category: 5
+    designerNote: Not a relevant skill.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_hire
+    text: Do you know how hard it is to get him out of my house
+    isSuspicious: 1
+    category: 5
+    designerNote: Wants him gone.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: -6379544655410331263, guid: 36849e90b30634a4ea79233459092ed1, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: -8036661074637762867, guid: 36849e90b30634a4ea79233459092ed1, type: 3}
+  - demeanor: 2
+    sprite: {fileID: 6424475358308982047, guid: 36849e90b30634a4ea79233459092ed1, type: 3}
+  - demeanor: 3
+    sprite: {fileID: 2896658364412041, guid: 36849e90b30634a4ea79233459092ed1, type: 3}
+  - demeanor: 4
+    sprite: {fileID: -7060414774977897906, guid: 36849e90b30634a4ea79233459092ed1, type: 3}
+  - demeanor: 5
+    sprite: {fileID: -8058035785157730380, guid: 36849e90b30634a4ea79233459092ed1, type: 3}
+  portraitTint: {r: 1, g: 0.93, b: 0.8, a: 1}
+  hiredMemo: Tanner's first act as VP was installing a pool in the meeting room.
+    His second was expensing a jet ski. The CEO is delighted. The shareholders are
+    not. Tanner has scheduled a 'vision meeting' on a yacht. Nobody knows where the
+    yacht is.
+  hirePerformance: -3
+  rejectedMemo: 'The CEO is furious that you rejected his nephew. He moved your desk
+    next to the bathroom. The board, however, sent you a fruit basket with a note:
+    ''Thank you.'''

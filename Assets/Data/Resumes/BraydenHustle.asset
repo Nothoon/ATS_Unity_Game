@@ -1,0 +1,269 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: BraydenHustle
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Brayden "Brand" Hustle
+  body: '<b>BRAYDEN "BRAND" HUSTLE</b>
+
+    Applying for: Social Media Manager
+
+
+    <b>EXPERIENCE</b>
+
+    {title}
+
+
+    <b>STATS</b>
+
+    {followers}
+
+    {viral}
+
+
+    <b>SKILLS</b>
+
+    {skill_grind}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: title
+    text: "Founder of the Hustle Mindset Movement\u2122"
+    isSuspicious: 1
+    category: 2
+    designerNote: 
+    suspiciousQuestion:
+      question: What is the 'Hustle Mindset Movement'?
+      answer: It's a lifestyle. We wake up at {h_3am} and drink raw eggs and ambition.
+      demeanor: 1
+      phrases:
+      - id: h_3am
+        text: 3 AM
+        isContradiction: 0
+        callOutResponse: Sleep is for people with no followers.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: A founder! Nice.
+      answer: Founder, CEO, and only member. But the energy is huge.
+      demeanor: 1
+      phrases: []
+  - id: followers
+    text: 12 million followers
+    isSuspicious: 1
+    category: 0
+    designerNote: Bought followers. Rule 8 says confirm it in the interview.
+    suspiciousQuestion:
+      question: 12 million followers. Can you prove that?
+      answer: "Easy. Every one of them is {f_real}. I bought\u2014 I mean, I {f_earned}
+        them."
+      demeanor: 1
+      phrases:
+      - id: f_real
+        text: real and engaged
+        isContradiction: 0
+        callOutResponse: Very engaged. They comment 'nice pic' on everything. Even
+          my tax documents.
+        callOutDemeanor: 1
+      - id: f_earned
+        text: earned
+        isContradiction: 1
+        callOutResponse: ...Fine, I bought them. $49.99 for 12 million. Honestly,
+          that's a great deal. You should get some.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: 12 million! Impressive reach.
+      answer: Massive reach. Mostly in a country I can't find on a map. Huge fans,
+        though.
+      demeanor: 1
+      phrases: []
+  - id: viral
+    text: Went viral for eating a lightbulb
+    isSuspicious: 1
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: You went viral for... eating a lightbulb?
+      answer: '{v_part}. It was a small lightbulb. I''m fine now. Mostly.'
+      demeanor: 4
+      phrases:
+      - id: v_part
+        text: Part of a lightbulb
+        isContradiction: 0
+        callOutResponse: The glowy part. Look, the views were incredible.
+        callOutDemeanor: 4
+    goodQuestion:
+      question: Going viral is valuable.
+      answer: So valuable. My doctor said never again, but the views said yes.
+      demeanor: 1
+      phrases: []
+  - id: skill_grind
+    text: 24/7 grindset
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: '''24/7 grindset''? When do you sleep?'
+      answer: I don't. I {g_sleep}.
+      demeanor: 1
+      phrases:
+      - id: g_sleep
+        text: nap in the shower
+        isContradiction: 0
+        callOutResponse: Two minutes. Standing up. It's the hustle.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: A hard worker. Great.
+      answer: The hardest. I once grinded so hard I forgot my own birthday. My followers
+        didn't remember it either.
+      demeanor: 0
+      phrases: []
+  - id: ref
+    text: '@HustleBot_9000'
+    isSuspicious: 1
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: Your reference is '@HustleBot_9000'?
+      answer: He's my business partner. A very real person who {b_posts}.
+      demeanor: 2
+      phrases:
+      - id: b_posts
+        text: posts every four seconds
+        isContradiction: 1
+        callOutResponse: ...Okay, he's a bot. But he's MY bot. And he's very supportive.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Can HustleBot vouch for you?
+      answer: He'll say 'Great post! Check my profile for crypto tips!' That's a
+        yes.
+      demeanor: 1
+      phrases: []
+  referenceLetter: 'Great post!! Check my profile for crypto tips!
+
+
+    Brayden
+    is {rl_grind}. Brayden gained {rl_followers}. DM me for {rl_crypto}.
+
+
+    Great
+    post!!
+
+    @HustleBot_9000'
+  referenceLetterClaims:
+  - id: rl_grind
+    text: the hardest working human I have ever met
+    isSuspicious: 1
+    category: 5
+    designerNote: Written by a bot.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_followers
+    text: 1 million followers in a week
+    isSuspicious: 1
+    category: 5
+    designerNote: Impossible growth.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_crypto
+    text: a once-in-a-lifetime crypto opportunity
+    isSuspicious: 1
+    category: 5
+    designerNote: Spam.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Automated voice:</b> Thank you for calling! Great
+    call! Check my profile for crypto tips!
+
+
+    <b>You:</b> Is there a human I
+    can speak to?
+
+
+    <b>Automated voice:</b> {rc_human}. Brayden is a {rc_hustler}.
+    Great call! Great call! Great call!'
+  referenceCheckClaims:
+  - id: rc_human
+    text: I am a real person who posts every four seconds
+    isSuspicious: 1
+    category: 5
+    designerNote: It's a bot.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_hustler
+    text: grind-set visionary entrepreneur
+    isSuspicious: 1
+    category: 5
+    designerNote: Buzzwords with nothing behind them.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: -6946471837665104532, guid: f6525bfae567fc749ab8f726e7ee3d88, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: -3823315008264552422, guid: f6525bfae567fc749ab8f726e7ee3d88, type: 3}
+  - demeanor: 2
+    sprite: {fileID: -470399503155425721, guid: f6525bfae567fc749ab8f726e7ee3d88, type: 3}
+  - demeanor: 3
+    sprite: {fileID: -9178311274899089482, guid: f6525bfae567fc749ab8f726e7ee3d88, type: 3}
+  - demeanor: 4
+    sprite: {fileID: 622253919, guid: f6525bfae567fc749ab8f726e7ee3d88, type: 3}
+  - demeanor: 5
+    sprite: {fileID: -1805486232, guid: f6525bfae567fc749ab8f726e7ee3d88, type: 3}
+  portraitTint: {r: 1, g: 0.9, b: 0.75, a: 1}
+  hiredMemo: Brayden's first post got 12 million views. All of them bots. Our account
+    is now banned in three countries and followed by an AI girlfriend app. Brayden
+    is filming a video called 'I ATE THE OFFICE PRINTER (NOT CLICKBAIT)'.
+  hirePerformance: -2
+  rejectedMemo: Brayden posted a video called 'SYNERGIX REJECTED ME (I'm not crying)'.
+    He was crying. It got 12 million views. From bots.

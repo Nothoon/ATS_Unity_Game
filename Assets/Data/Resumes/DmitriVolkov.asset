@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: DmitriVolkov
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Dmitri Volkov
+  body: '<b>DMITRI VOLKOV</b>
+
+    Applying for: Head of Cybersecurity
+
+
+    <b>CURRENT
+    EMPLOYER</b>
+
+    {current}
+
+
+    <b>EXPERIENCE</b>
+
+    {title}
+
+
+    <b>HOBBIES</b>
+
+    {hobby}
+
+
+    <b>OTHER</b>
+
+    {not_spy}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: current
+    text: "Competitor Corp\u2122 (leaving soon, probably)"
+    isSuspicious: 1
+    category: 0
+    designerNote: Current competitor employee breaks rule 6.
+    suspiciousQuestion:
+      question: You currently work for Competitor Corp?
+      answer: Yes, but I am leaving the moment I get your {c_files}. And I {c_hate}
+        them.
+      demeanor: 2
+      phrases:
+      - id: c_files
+        text: "files\u2014 your JOB"
+        isContradiction: 1
+        callOutResponse: The JOB. I said job. The moment I get your job. Files is
+          just... how I say job.
+        callOutDemeanor: 3
+      - id: c_hate
+        text: hate
+        isContradiction: 0
+        callOutResponse: So much hate. Look at my face. This is my hate face.
+        callOutDemeanor: 0
+    goodQuestion:
+      question: Competitor Corp experience could be useful.
+      answer: Extremely useful. I know all their secrets. And soon, all of yours.
+        Because I will work here. Normally.
+      demeanor: 5
+      phrases: []
+  - id: title
+    text: Head of Corporate Espionage Prevention
+    isSuspicious: 0
+    category: 2
+    designerNote: 
+    suspiciousQuestion:
+      question: What does 'Espionage Prevention' involve?
+      answer: Preventing spies. I know exactly how spies think. {s_reason}.
+      demeanor: 2
+      phrases:
+      - id: s_reason
+        text: For no reason
+        isContradiction: 1
+        callOutResponse: ...Because I read many books. Spy books. Not spy manuals.
+          Different thing.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Espionage prevention is exactly what we need.
+      answer: Yes. I will prevent all espionage. Except mine. I mean except none.
+        I prevent all of it.
+      demeanor: 2
+      phrases: []
+  - id: hobby
+    text: Photography (server rooms, filing cabinets, passwords)
+    isSuspicious: 1
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: You photograph... server rooms and passwords?
+      answer: It is {h_art}. The way the light hits a password on a sticky note.
+        Beautiful.
+      demeanor: 4
+      phrases:
+      - id: h_art
+        text: art
+        isContradiction: 0
+        callOutResponse: You wouldn't understand. It is very modern.
+        callOutDemeanor: 4
+    goodQuestion:
+      question: Photography is a nice hobby.
+      answer: Yes. May I photograph your office? For art. Just the computers. And
+        the filing cabinet. Hold that drawer open.
+      demeanor: 5
+      phrases: []
+  - id: not_spy
+    text: NOT A SPY
+    isSuspicious: 1
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: Why does your resume say 'NOT A SPY'?
+      answer: So there is {n_confusion}. Many people ask. It saves time.
+      demeanor: 1
+      phrases:
+      - id: n_confusion
+        text: no confusion
+        isContradiction: 0
+        callOutResponse: If I was a spy, would I write 'not a spy'? No. A spy would
+          write 'spy'. Checkmate.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Good to know you're not a spy.
+      answer: Thank you. I am glad that is settled. Please do not {n_shoe}.
+      demeanor: 2
+      phrases:
+      - id: n_shoe
+        text: check my shoe
+        isContradiction: 1
+        callOutResponse: There is nothing in my shoe. Except a tiny camera. For my
+          art! For my photography art!
+        callOutDemeanor: 3
+  - id: ref
+    text: Boris, Competitor Corp ('Department of Getting Files')
+    isSuspicious: 1
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: What is the 'Department of Getting Files'?
+      answer: It is HR. We call it that because HR handles {f_files}.
+      demeanor: 2
+      phrases:
+      - id: f_files
+        text: your files. I mean OUR files
+        isContradiction: 1
+        callOutResponse: THEIR files. Competitor Corp's own files. Which I do not
+          have. Of yours. Next question.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Boris can speak to your work?
+      answer: Boris will say I am excellent at getting things. Jobs. Getting jobs.
+      demeanor: 5
+      phrases: []
+  referenceLetter: 'To whom this may concern,
+
+
+    Dmitri has been an {rl_asset}
+    to Competitor Corp. He {rl_access} to many sensitive systems and {rl_gifts} on
+    his last day.
+
+
+    He is an {rl_leaving}. We are very sad to lose him.
+
+
+    Boris
+
+    Department
+    of Getting Files'
+  referenceLetterClaims:
+  - id: rl_asset
+    text: invaluable asset
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_access
+    text: had unrestricted access
+    isSuspicious: 1
+    category: 5
+    designerNote: Why was this a selling point?
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_gifts
+    text: left a small drive of goodbye gifts
+    isSuspicious: 1
+    category: 5
+    designerNote: A USB of files.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_leaving
+    text: excellent employee, leaving voluntarily
+    isSuspicious: 1
+    category: 5
+    designerNote: Why is a competitor happy to lose him?
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Boris:</b> Da? Yes. Dmitri. Good man. {rc_loyal}
+    to us.
+
+
+    <b>You:</b> Why is he leaving?
+
+
+    <b>Boris:</b> {rc_leave}. He
+    is going to a company with very nice servers. Please give him a door badge. Any
+    door.'
+  referenceCheckClaims:
+  - id: rc_loyal
+    text: Very loyal
+    isSuspicious: 1
+    category: 5
+    designerNote: Loyal to Competitor Corp, not to us.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_leave
+    text: He has finished his project here
+    isSuspicious: 1
+    category: 5
+    designerNote: What project?
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: 1098739225542256906, guid: a9622ec640d96b143bff8f8f0904db09, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: 1455753774, guid: a9622ec640d96b143bff8f8f0904db09, type: 3}
+  - demeanor: 2
+    sprite: {fileID: -439948747, guid: a9622ec640d96b143bff8f8f0904db09, type: 3}
+  - demeanor: 3
+    sprite: {fileID: -182783604, guid: a9622ec640d96b143bff8f8f0904db09, type: 3}
+  - demeanor: 4
+    sprite: {fileID: -385924849, guid: a9622ec640d96b143bff8f8f0904db09, type: 3}
+  - demeanor: 5
+    sprite: {fileID: -468209001, guid: a9622ec640d96b143bff8f8f0904db09, type: 3}
+  portraitTint: {r: 0.9, g: 0.9, b: 0.95, a: 1}
+  hiredMemo: Dmitri was a spy. Competitor Corp just released a product that is exactly
+    our product, but blue. Dmitri left a note on his desk that says 'NOT A SPY (was
+    a spy)'. He took the filing cabinet.
+  hirePerformance: -3
+  rejectedMemo: 

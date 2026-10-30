@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: KevinPratt
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Dr. Kevin Pratt
+  body: '<b>DR. KEVIN PRATT, PhD, MD, ESQ.</b>
+
+    Applying for: Office Manager
+
+
+    <b>EDUCATION</b>
+
+    {phd}
+
+
+    <b>EXPERIENCE</b>
+
+    {title}
+    - Self-Employed
+
+    {dates}
+
+
+    <b>CERTIFICATIONS</b>
+
+    {cert}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: phd
+    text: PhD in Office Management, University of Online (est. last Tuesday)
+    isSuspicious: 1
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: Your university was founded last Tuesday?
+      answer: It's a {u_fast} program. I finished my PhD in {u_hours}.
+      demeanor: 5
+      phrases:
+      - id: u_fast
+        text: very fast-paced
+        isContradiction: 0
+        callOutResponse: Accelerated learning. They mailed the diploma before I applied.
+        callOutDemeanor: 5
+      - id: u_hours
+        text: three hours
+        isContradiction: 0
+        callOutResponse: Two hours and fifty minutes, actually. I'm gifted.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: A PhD! Impressive.
+      answer: Please, call me Doctor. Or Dr. Kevin. Or simply 'The Doctor'.
+      demeanor: 1
+      phrases: []
+  - id: title
+    text: Chief Medical Office Manager
+    isSuspicious: 1
+    category: 2
+    designerNote: '''Chief'' title with one week of experience breaks rule 5.'
+    suspiciousQuestion:
+      question: '''Chief Medical Office Manager''? Of what office?'
+      answer: Of my {k_apartment}. It has an office. And a medicine cabinet.
+      demeanor: 4
+      phrases:
+      - id: k_apartment
+        text: apartment
+        isContradiction: 1
+        callOutResponse: Fine! It's a studio apartment. The 'office' is a chair.
+          But I manage that chair VERY well.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Chief Medical Office Manager sounds important.
+      answer: It is. People call me in emergencies. Office emergencies. Like when
+        the stapler is empty.
+      demeanor: 1
+      phrases: []
+  - id: dates
+    text: Last week - Present
+    isSuspicious: 1
+    category: 1
+    designerNote: 'Breaks rule 1: needs 2+ years of experience.'
+    suspiciousQuestion:
+      question: You've only had this job since last week?
+      answer: '{w_quality} over quantity. It was a very long week.'
+      demeanor: 4
+      phrases:
+      - id: w_quality
+        text: Quality
+        isContradiction: 0
+        callOutResponse: Quantity is overrated. Ask anyone. Ask me.
+        callOutDemeanor: 4
+    goodQuestion:
+      question: Fresh experience. Exciting.
+      answer: Very fresh. It still has that new-job smell.
+      demeanor: 1
+      phrases: []
+  - id: cert
+    text: Certified Doctor of Paperwork
+    isSuspicious: 1
+    category: 3
+    designerNote: No certificate ID breaks rule 4.
+    suspiciousQuestion:
+      question: Your certification doesn't have an ID number.
+      answer: The ID is... {c_id}. Yes. That's it.
+      demeanor: 5
+      phrases:
+      - id: c_id
+        text: 1-2-3-4
+        isContradiction: 1
+        callOutResponse: Okay, I printed it myself. But the printer was very expensive!
+          That should count.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Doctor of Paperwork, nice.
+      answer: I've done so much paperwork. Including this certificate. Which I...
+        received.
+      demeanor: 5
+      phrases: []
+  - id: ref
+    text: Dr. Kevin Pratt
+    isSuspicious: 1
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: You listed yourself as your own reference.
+      answer: Who knows me better? I'd {r_vouch} any day.
+      demeanor: 1
+      phrases:
+      - id: r_vouch
+        text: vouch for me
+        isContradiction: 0
+        callOutResponse: Call me. I'll pick up. I'll say great things.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Can your reference speak to your work?
+      answer: Absolutely. Here's his number. It's my number. He's very available.
+      demeanor: 1
+      phrases: []
+  referenceLetter: 'To whom it may concern,
+
+
+    I, Dr. Kevin Pratt, {rl_self} confirm
+    that Dr. Kevin Pratt is an excellent candidate. He holds {rl_degrees} and is
+    very {rl_humble}.
+
+
+    Yours,
+
+    Dr. Kevin Pratt, PhD, MD, Esq.'
+  referenceLetterClaims:
+  - id: rl_self
+    text: can personally
+    isSuspicious: 1
+    category: 5
+    designerNote: He wrote his own reference.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_degrees
+    text: three doctorates
+    isSuspicious: 1
+    category: 5
+    designerNote: Unverified.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_humble
+    text: humble
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Dr. Pratt:</b> Dr. Pratt speaking. Oh, you want my
+    reference? {rc_oh}.
+
+
+    <b>You:</b> You are the reference.
+
+
+    <b>Dr. Pratt:</b>
+    {rc_other}. Hello, I''m Dr. Pratt''s former colleague, Dr. Pratt. He is a marvel.'
+  referenceCheckClaims:
+  - id: rc_oh
+    text: One moment, let me put on my other voice
+    isSuspicious: 1
+    category: 5
+    designerNote: The same person.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_other
+    text: Ah. Yes. Hold on
+    isSuspicious: 1
+    category: 5
+    designerNote: Stalling.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: -234010328860621543, guid: 9b880907c5caa064db09a732c503c488, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: -800582878017544165, guid: 9b880907c5caa064db09a732c503c488, type: 3}
+  - demeanor: 2
+    sprite: {fileID: 454050518391703585, guid: 9b880907c5caa064db09a732c503c488, type: 3}
+  - demeanor: 3
+    sprite: {fileID: -8292594057285073636, guid: 9b880907c5caa064db09a732c503c488, type: 3}
+  - demeanor: 4
+    sprite: {fileID: -7222080770384918852, guid: 9b880907c5caa064db09a732c503c488, type: 3}
+  - demeanor: 5
+    sprite: {fileID: -7549366, guid: 9b880907c5caa064db09a732c503c488, type: 3}
+  portraitTint: {r: 0.95, g: 0.95, b: 1, a: 1}
+  hiredMemo: Dr. Kevin 'diagnosed' the printer with 'paper flu' and prescribed it
+    bed rest. It has not printed since. He wears a stethoscope to meetings. We found
+    out his PhD came with a free toaster.
+  hirePerformance: -2
+  rejectedMemo: Dr. Kevin has opened a 'clinic' in the parking lot. He is charging
+    people to look at their staplers.

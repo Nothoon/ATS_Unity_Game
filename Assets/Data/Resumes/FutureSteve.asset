@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: FutureSteve
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Steve (from the future)
+  body: '<b>STEVE</b>
+
+    (from the future)
+
+    Applying for: Vice President of
+    Everything
+
+
+    <b>EXPERIENCE</b>
+
+    {title}
+
+    {dates}
+
+
+    <b>SKILLS</b>
+
+    {skill_future},
+    {skill_lottery}
+
+
+    <b>OTHER</b>
+
+    {other}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: title
+    text: Vice President of Everything, Synergix
+    isSuspicious: 1
+    category: 2
+    designerNote: 
+    suspiciousQuestion:
+      question: You already list this exact job on your resume.
+      answer: Because I {f_had}. In the future. I'm just doing the paperwork.
+      demeanor: 1
+      phrases:
+      - id: f_had
+        text: already had it
+        isContradiction: 0
+        callOutResponse: I was great at it. Trust me. I've seen it.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: VP of Everything experience. Very relevant.
+      answer: The MOST relevant. I know where everything is. Including the yacht.
+        Especially the yacht.
+      demeanor: 1
+      phrases: []
+  - id: dates
+    text: 2041 - 2049
+    isSuspicious: 1
+    category: 1
+    designerNote: Future dates break rule 2. Also rule 11.
+    suspiciousQuestion:
+      question: Your dates are 2041 to 2049. That is the future.
+      answer: No it's not. It's the {t_past}. For me. Because {t_circle}.
+      demeanor: 2
+      phrases:
+      - id: t_past
+        text: past
+        isContradiction: 0
+        callOutResponse: Past, future. Tomato, tomato. Next question.
+        callOutDemeanor: 2
+      - id: t_circle
+        text: time is a flat circle
+        isContradiction: 1
+        callOutResponse: Did I say flat circle? I meant a normal line. Time is a
+          normal line. No time travel here.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Eight years of experience! Great.
+      answer: Great years. 2047 was rough, though. Don't eat the shrimp. You'll know
+        when.
+      demeanor: 2
+      phrases: []
+  - id: skill_future
+    text: Knows how this interview ends
+    isSuspicious: 1
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: How do you 'know how this interview ends'?
+      answer: Because I've done it before. Next you're going to ask me {i_next}.
+      demeanor: 1
+      phrases:
+      - id: i_next
+        text: about my shoes
+        isContradiction: 0
+        callOutResponse: ...You weren't going to ask about my shoes? Huh. The timeline
+          has changed. That's bad.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Confidence. I like it.
+      answer: It's not confidence. It's memory. You hire me. Or you don't. I forget
+        which. Twice.
+      demeanor: 5
+      phrases: []
+  - id: skill_lottery
+    text: Lottery (very lucky)
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: Very lucky at the lottery?
+      answer: I {l_won} six times in a row. Completely by chance.
+      demeanor: 2
+      phrases:
+      - id: l_won
+        text: won
+        isContradiction: 0
+        callOutResponse: Lucky guesses. Numbers just come to me. From the future.
+          FROM THE HEART. From the heart.
+        callOutDemeanor: 2
+    goodQuestion:
+      question: Luck is underrated.
+      answer: 'So underrated. Quick tip: buy umbrellas. Lots of umbrellas. No reason.'
+      demeanor: 2
+      phrases: []
+  - id: other
+    text: Not a time traveler
+    isSuspicious: 1
+    category: 0
+    designerNote: He is a time traveler. Rule 11.
+    suspiciousQuestion:
+      question: Why write 'not a time traveler' on your resume?
+      answer: HR told me about the rule in 2019. I mean, I {h_heard} about it.
+      demeanor: 2
+      phrases:
+      - id: h_heard
+        text: just now heard
+        isContradiction: 0
+        callOutResponse: Just now. When you said it. Which you will. In a second.
+        callOutDemeanor: 2
+    goodQuestion:
+      question: Good to know you're not a time traveler.
+      answer: Exactly. Totally normal man. From now. {y_year}
+      demeanor: 1
+      phrases:
+      - id: y_year
+        text: What year is it again?
+        isContradiction: 1
+        callOutResponse: It's... 2026. I knew that. Ha. Ha. Please don't call anyone.
+        callOutDemeanor: 3
+  - id: ref
+    text: Steve (older)
+    isSuspicious: 1
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: Your reference is 'Steve (older)'?
+      answer: He's my {o_uncle}. Same name. Same face. We're very close.
+      demeanor: 5
+      phrases:
+      - id: o_uncle
+        text: uncle
+        isContradiction: 1
+        callOutResponse: Fine. He's me. Older me. He says hi, and to buy umbrellas.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Can Steve (older) vouch for you?
+      answer: He already did. In 2051. He was very nice about it.
+      demeanor: 1
+      phrases: []
+  referenceLetter: 'Dated: {rl_date}
+
+
+    To whom it may concern,
+
+
+    Steve is
+    {rl_remarkable}. I see a lot of myself in him. I recommend him {rl_recommend}.
+
+
+    Steve
+    (older)'
+  referenceLetterClaims:
+  - id: rl_date
+    text: March 3rd, 2051
+    isSuspicious: 1
+    category: 5
+    designerNote: Dated in the future.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_remarkable
+    text: a remarkable young man
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_recommend
+    text: without reservation, and also buy umbrellas
+    isSuspicious: 1
+    category: 5
+    designerNote: Odd advice.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Steve (older):</b> Hello. {rc_voice}.
+
+
+    <b>You:</b>
+    You sound exactly like Steve.
+
+
+    <b>Steve (older):</b> {rc_family}. He''s
+    going to do great. Don''t ask me about the lottery.'
+  referenceCheckClaims:
+  - id: rc_voice
+    text: It's me. Well, you know, older me
+    isSuspicious: 1
+    category: 5
+    designerNote: Admits it's the same person.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_family
+    text: We're very close
+    isSuspicious: 1
+    category: 5
+    designerNote: Same person.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: 2786435439654698694, guid: c1cb41309465b244e99aa28163c0b1e5, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: -7442118740334830781, guid: c1cb41309465b244e99aa28163c0b1e5, type: 3}
+  - demeanor: 2
+    sprite: {fileID: 7403511375368545776, guid: c1cb41309465b244e99aa28163c0b1e5, type: 3}
+  - demeanor: 3
+    sprite: {fileID: -7933464355231772080, guid: c1cb41309465b244e99aa28163c0b1e5, type: 3}
+  - demeanor: 4
+    sprite: {fileID: 1571074820, guid: c1cb41309465b244e99aa28163c0b1e5, type: 3}
+  - demeanor: 5
+    sprite: {fileID: -91424902, guid: c1cb41309465b244e99aa28163c0b1e5, type: 3}
+  portraitTint: {r: 0.85, g: 0.95, b: 1, a: 1}
+  hiredMemo: Steve prevented the Great Shrimp Incident of 2047, which nobody understood.
+    He also accidentally erased Dale's cousin from existence. Productivity has collapsed
+    because everyone keeps asking Steve about the future. He just says 'buy umbrellas'.
+  hirePerformance: -1
+  rejectedMemo: 'Steve left a note on your desk: ''Good choice. Or bad choice. I''ll
+    let you know in 2049.'''

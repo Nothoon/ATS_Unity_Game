@@ -1,0 +1,314 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: MargaretIronside
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Margaret Ironside
+  body: '<b>MARGARET IRONSIDE</b>
+
+    Applying for: Head of Cybersecurity
+
+
+    <b>EXPERIENCE</b>
+
+    {title}
+    - First National Bank
+
+    {dates}
+
+    {gap}
+
+
+    <b>SKILLS</b>
+
+    {skill_cobol},
+    {skill_paranoia}
+
+
+    <b>CERTIFICATIONS</b>
+
+    {cert}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: title
+    text: Senior Security Analyst
+    isSuspicious: 0
+    category: 2
+    designerNote: 
+    suspiciousQuestion:
+      question: Senior Security Analyst. How senior?
+      answer: I've been doing this since computers were {m_rooms}.
+      demeanor: 1
+      phrases:
+      - id: m_rooms
+        text: the size of rooms
+        isContradiction: 0
+        callOutResponse: We had one computer, and it was named Brenda. Not your office
+          manager. A different Brenda.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Senior Security Analyst. Impressive.
+      answer: Thirty-one years. I have seen every scam. Twice.
+      demeanor: 1
+      phrases: []
+  - id: dates
+    text: 1984 - 2015
+    isSuspicious: 0
+    category: 1
+    designerNote: 
+    suspiciousQuestion:
+      question: Why did you leave the bank in 2015?
+      answer: I caught the bank manager {b_steal}. They gave me a medal and an early
+        retirement.
+      demeanor: 1
+      phrases:
+      - id: b_steal
+        text: stealing from the vault
+        isContradiction: 0
+        callOutResponse: Three million dollars in a briefcase labelled 'NOT MONEY'.
+          Amateurs.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: 31 years at one bank!
+      answer: And not a single cent went missing on my watch. Except the manager's.
+        He's in jail.
+      demeanor: 1
+      phrases: []
+  - id: gap
+    text: '(2015 - 2019: gap)'
+    isSuspicious: 0
+    category: 1
+    designerNote: Sounds wild, but every word is true.
+    suspiciousQuestion:
+      question: There's a four-year gap in your history.
+      answer: I {g_sail}. Alone. I fought off {g_pirates}.
+      demeanor: 1
+      phrases:
+      - id: g_sail
+        text: sailed around the world
+        isContradiction: 0
+        callOutResponse: I have the photos. And a parrot. His name is Firewall.
+        callOutDemeanor: 1
+      - id: g_pirates
+        text: two pirate ships
+        isContradiction: 0
+        callOutResponse: Two. Small ones. They were very rude.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Taking time off is healthy.
+      answer: Very. Nothing clears the mind like a hurricane.
+      demeanor: 1
+      phrases: []
+  - id: skill_cobol
+    text: COBOL (40 years)
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: 40 years of COBOL? Is that still useful?
+      answer: Half the banks on earth still run on COBOL, dear. {c_young} don't know
+        that.
+      demeanor: 0
+      phrases:
+      - id: c_young
+        text: Young people
+        isContradiction: 0
+        callOutResponse: No offense. You're very young. Everyone is young to me.
+        callOutDemeanor: 0
+    goodQuestion:
+      question: A COBOL expert. Rare.
+      answer: Rare and expensive. Like a good cheese.
+      demeanor: 1
+      phrases: []
+  - id: skill_paranoia
+    text: Professional paranoia
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: '''Professional paranoia''?'
+      answer: I {p_cover} my webcam, my phone camera and my toaster.
+      demeanor: 1
+      phrases:
+      - id: p_cover
+        text: tape over
+        isContradiction: 0
+        callOutResponse: Toasters are listening. I'm sure of it.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Paranoia is good in security.
+      answer: Exactly. I've already noticed your password is on a sticky note at
+        the front desk. It's 'Dale1'.
+      demeanor: 1
+      phrases: []
+  - id: cert
+    text: 'CISSP (ID: 4471-2290)'
+    isSuspicious: 0
+    category: 3
+    designerNote: 
+    suspiciousQuestion:
+      question: Is your CISSP certification current?
+      answer: Renewed every three years since 1994. ID 4471-2290. Look it up, I'll
+        wait.
+      demeanor: 1
+      phrases: []
+    goodQuestion:
+      question: CISSP. Very solid.
+      answer: I've also failed zero exams. Ever. I'm told it's intimidating.
+      demeanor: 1
+      phrases: []
+  - id: ref
+    text: Detective Sam Okafor, Fraud Unit
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: A police detective is your reference?
+      answer: We worked together on the bank case. He still sends me a {r_card}.
+      demeanor: 1
+      phrases:
+      - id: r_card
+        text: Christmas card
+        isContradiction: 0
+        callOutResponse: Every year. With a photo of the manager's jail cell. It's
+          our little joke.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: A detective reference is strong.
+      answer: He'll tell you I'm a terror. He means it as a compliment.
+      demeanor: 1
+      phrases: []
+  referenceLetter: 'To whom it may concern,
+
+
+    Margaret {rl_case} at First National
+    Bank and helped my unit close the case. She was {rl_terror}, in the best way.
+
+
+    She
+    was also very good at keeping {rl_secrets}.
+
+
+    Detective Sam Okafor
+
+    Fraud
+    Unit'
+  referenceLetterClaims:
+  - id: rl_case
+    text: identified a major embezzlement scheme
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_terror
+    text: a terror to every auditor
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_secrets
+    text: secrets. Mostly
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Detective Okafor:</b> Fraud Unit. Okafor.
+
+
+    <b>You:</b>
+    I''m calling about Margaret Ironside.
+
+
+    <b>Detective Okafor:</b> Ah. Margaret.
+    {rc_terror}. She caught our guy in an afternoon. {rc_card}. Please hire her.
+    I''d like her off my cases.'
+  referenceCheckClaims:
+  - id: rc_terror
+    text: She's a terror
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_card
+    text: I send her a card every year
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: 453912558619838923, guid: 18dbfd86ee61d6e4db07a771201884d9, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: 4212969280974272816, guid: 18dbfd86ee61d6e4db07a771201884d9, type: 3}
+  - demeanor: 2
+    sprite: {fileID: 8672450479824406936, guid: 18dbfd86ee61d6e4db07a771201884d9, type: 3}
+  - demeanor: 3
+    sprite: {fileID: 2512542903340418037, guid: 18dbfd86ee61d6e4db07a771201884d9, type: 3}
+  - demeanor: 4
+    sprite: {fileID: -1031492064, guid: 18dbfd86ee61d6e4db07a771201884d9, type: 3}
+  - demeanor: 5
+    sprite: {fileID: -1935731396, guid: 18dbfd86ee61d6e4db07a771201884d9, type: 3}
+  portraitTint: {r: 0.92, g: 0.92, b: 0.92, a: 1}
+  hiredMemo: Margaret found 14 security holes, changed every password, and caught
+    the accountant moving money into a company called 'Totally Real Business LLC'.
+    She taped over Dale's webcam permanently. Hackers are afraid of her. So is Dale.
+  hirePerformance: 3
+  rejectedMemo: Margaret Ironside was hired by Competitor Corp. Their security is
+    now unbreakable. Our password is still 'Dale1'.

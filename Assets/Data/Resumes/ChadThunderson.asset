@@ -1,0 +1,324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: ChadThunderson
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Chad Thunderson
+  body: '<b>CHAD "THE CODE WIZARD" THUNDERSON</b>
+
+    Applying for: Junior Gameplay
+    Programmer (overqualified)
+
+
+    <b>EXPERIENCE</b>
+
+    {title}
+
+    {dates}
+
+
+    <b>SKILLS</b>
+
+    {skill_html}
+
+    {skill_years}
+
+
+    <b>ACHIEVEMENTS</b>
+
+    {invented}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: title
+    text: Founder, CEO & Supreme Coder - ThunderCorp
+    isSuspicious: 1
+    category: 2
+    designerNote: 
+    suspiciousQuestion:
+      question: '''Supreme Coder'' at ThunderCorp. How many employees does ThunderCorp
+        have?'
+      answer: Including me? {c_one}. But {c_dog} is basically an employee.
+      demeanor: 1
+      phrases:
+      - id: c_one
+        text: One
+        isContradiction: 0
+        callOutResponse: One is a number of employees. And that number is mine.
+        callOutDemeanor: 1
+      - id: c_dog
+        text: my dog Byte
+        isContradiction: 0
+        callOutResponse: Byte handles QA. He has found zero bugs. Flawless record.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Founder and CEO! What does ThunderCorp make?
+      answer: Vibes, mostly. And one app. It's a flashlight. It doesn't turn off.
+      demeanor: 1
+      phrases: []
+  - id: dates
+    text: Jan 2025 - Dec 2031
+    isSuspicious: 1
+    category: 1
+    designerNote: Future end date breaks rule 2.
+    suspiciousQuestion:
+      question: Your job ends in 2031. That is in the future.
+      answer: I {f_plan} ahead. I signed a six-year contract. With myself.
+      demeanor: 4
+      phrases:
+      - id: f_plan
+        text: plan
+        isContradiction: 0
+        callOutResponse: Visionaries plan. You wouldn't understand. No offense.
+        callOutDemeanor: 4
+    goodQuestion:
+      question: A six-year commitment. Love the loyalty.
+      answer: Thank you. I'm extremely loyal. To myself.
+      demeanor: 1
+      phrases: []
+  - id: skill_html
+    text: HTML (expert programming language)
+    isSuspicious: 1
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: You listed HTML as a programming language.
+      answer: Yes. It's the {h_power}. Everything on the internet is HTML.
+      demeanor: 4
+      phrases:
+      - id: h_power
+        text: most powerful programming language
+        isContradiction: 0
+        callOutResponse: Name one website without HTML. Exactly. You can't.
+        callOutDemeanor: 4
+    goodQuestion:
+      question: HTML expert! Great.
+      answer: I once made a website that was just the word 'Chad' in bold. It got
+        four visits. All me.
+      demeanor: 1
+      phrases: []
+  - id: skill_years
+    text: 40 years of Unity 6 experience
+    isSuspicious: 1
+    category: 4
+    designerNote: 'Impossible: Unity 6 is from 2024.'
+    suspiciousQuestion:
+      question: Unity 6 came out in 2024. How do you have 40 years of experience
+        with it?
+      answer: I {u_parallel}. Ten projects at once, four years each. Math.
+      demeanor: 1
+      phrases:
+      - id: u_parallel
+        text: work in parallel
+        isContradiction: 0
+        callOutResponse: Have you heard of multitasking? I invented it.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: 40 years with Unity 6. You must be the best in the world.
+      answer: I am. I'm also {u_age}. Not related.
+      demeanor: 1
+      phrases:
+      - id: u_age
+        text: 24 years old
+        isContradiction: 1
+        callOutResponse: ...Okay, it's more like 40 HOURS. But they were very intense
+          hours.
+        callOutDemeanor: 3
+  - id: invented
+    text: Invented the semicolon (2019)
+    isSuspicious: 1
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: You invented the semicolon in 2019?
+      answer: Before me, code just {s_ran}. Total chaos. You're welcome.
+      demeanor: 5
+      phrases:
+      - id: s_ran
+        text: ran together like one long sentence
+        isContradiction: 0
+        callOutResponse: Look it up. Actually, don't look it up.
+        callOutDemeanor: 5
+    goodQuestion:
+      question: Inventing the semicolon is a big deal.
+      answer: It was a big year. I also invented the {s_comma}.
+      demeanor: 1
+      phrases:
+      - id: s_comma
+        text: comma
+        isContradiction: 0
+        callOutResponse: And the period. Punctuation is my passion.
+        callOutDemeanor: 1
+  - id: ref
+    text: Brenda Thunderson (Mom)
+    isSuspicious: 1
+    category: 5
+    designerNote: Family reference breaks rule 3.
+    suspiciousQuestion:
+      question: Your reference is your mom.
+      answer: She's also my manager. She signs my {m_report}.
+      demeanor: 4
+      phrases:
+      - id: m_report
+        text: report card
+        isContradiction: 1
+        callOutResponse: My PERFORMANCE review. It has gold stars on it. I'm a professional.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Honestly, moms are great references.
+      answer: Thank you! She says I'm {m_special}.
+      demeanor: 1
+      phrases:
+      - id: m_special
+        text: very special
+        isContradiction: 0
+        callOutResponse: She says it every day. Sometimes with a sigh, but she says
+          it.
+        callOutDemeanor: 1
+  referenceLetter: 'Dear Employer,
+
+
+    My son Chad is a {rl_wizard}. He {rl_cleans}
+    his room without being asked, and he works well {rl_team}.
+
+
+    Chad''s father
+    and I could not be prouder. Please hire him, he has been home for a while.
+
+
+    With
+    love,
+
+    Mom'
+  referenceLetterClaims:
+  - id: rl_wizard
+    text: genuine code wizard
+    isSuspicious: 1
+    category: 5
+    designerNote: Her opinion, not a professional one.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_cleans
+    text: cleans
+    isSuspicious: 1
+    category: 5
+    designerNote: Described as a home chore. Family relationship.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_team
+    text: with others when supervised
+    isSuspicious: 1
+    category: 5
+    designerNote: Qualified praise.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Brenda Thunderson:</b> Hello! Is this about my little
+    Chad?
+
+
+    <b>You:</b> Were you his manager?
+
+
+    <b>Brenda Thunderson:</b>
+    I {rc_manage} him every day. He''s {rc_special}. {rc_dinner}.'
+  referenceCheckClaims:
+  - id: rc_manage
+    text: supervise
+    isSuspicious: 1
+    category: 5
+    designerNote: She's his mother, not a manager.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_special
+    text: very special
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_dinner
+    text: Dinner is at six, Chad, don't be late
+    isSuspicious: 1
+    category: 5
+    designerNote: Spoken to Chad, who is clearly in the room.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: 7302605305134601114, guid: c9dda2ce1d6ace5408df72a6f70d9883, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: 3497130560036667996, guid: c9dda2ce1d6ace5408df72a6f70d9883, type: 3}
+  - demeanor: 2
+    sprite: {fileID: -509199227144763825, guid: c9dda2ce1d6ace5408df72a6f70d9883, type: 3}
+  - demeanor: 3
+    sprite: {fileID: 3152110915036142676, guid: c9dda2ce1d6ace5408df72a6f70d9883, type: 3}
+  - demeanor: 4
+    sprite: {fileID: -1234103564732759510, guid: c9dda2ce1d6ace5408df72a6f70d9883, type: 3}
+  - demeanor: 5
+    sprite: {fileID: -7469166427436020192, guid: c9dda2ce1d6ace5408df72a6f70d9883, type: 3}
+  portraitTint: {r: 1, g: 0.85, b: 0.7, a: 1}
+  hiredMemo: 'Chad has renamed himself ''Chief Vibes Officer'' and has not written
+    a single line of code. He did start a podcast called ''Coding Is a Mindset''.
+    It has one listener: his mom. The build has been broken for four days.'
+  hirePerformance: -3
+  rejectedMemo: Chad Thunderson left our company a 1-star review. It says 'they fear
+    greatness'.

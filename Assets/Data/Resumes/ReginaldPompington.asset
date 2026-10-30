@@ -1,0 +1,245 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: ReginaldPompington
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Sir Reginald Pompington III
+  body: '<b>SIR REGINALD POMPINGTON III</b>
+
+    Applying for: Social Media Manager
+    (Lord of)
+
+
+    <b>TITLES</b>
+
+    {knight}
+
+
+    <b>EXPERIENCE</b>
+
+    {title}
+
+    {dates}
+
+
+    <b>SKILLS</b>
+
+    {skill_internet}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: knight
+    text: Knighted by the Queen (of Social Media)
+    isSuspicious: 1
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: Who is the 'Queen of Social Media'?
+      answer: A very important woman. She {q_followers}. She knighted me with a selfie
+        stick.
+      demeanor: 4
+      phrases:
+      - id: q_followers
+        text: has 900 followers
+        isContradiction: 0
+        callOutResponse: 900 LOYAL followers. Quality over quantity, peasant.
+        callOutDemeanor: 4
+    goodQuestion:
+      question: A knighthood! Very distinguished.
+      answer: Indeed. You may kiss my ring. It's from a vending machine, but it is
+        still a ring.
+      demeanor: 1
+      phrases: []
+  - id: title
+    text: Grand Duke of Hashtags
+    isSuspicious: 1
+    category: 2
+    designerNote: Fancy title with one year of experience breaks rule 5.
+    suspiciousQuestion:
+      question: '''Grand Duke of Hashtags''? How many years of experience?'
+      answer: '{d_years}. Social media years count double. Like dog years.'
+      demeanor: 4
+      phrases:
+      - id: d_years
+        text: Three
+        isContradiction: 1
+        callOutResponse: ...One. It's one year. But it FELT like three. Very tiring
+          work, hashtags.
+        callOutDemeanor: 4
+    goodQuestion:
+      question: Grand Duke! A strong title.
+      answer: I gave it to myself. Nobody else would. Their loss.
+      demeanor: 1
+      phrases: []
+  - id: dates
+    text: 2025 - Present
+    isSuspicious: 0
+    category: 1
+    designerNote: 
+    suspiciousQuestion:
+      question: Where have you worked since 2025?
+      answer: At my {m_manor}.
+      demeanor: 4
+      phrases:
+      - id: m_manor
+        text: manor
+        isContradiction: 1
+        callOutResponse: Fine, it's my mother's basement. But I call it the manor,
+          and so should you.
+        callOutDemeanor: 4
+    goodQuestion:
+      question: Recent experience. Good.
+      answer: Very recent. Practically fresh. Like a scone.
+      demeanor: 1
+      phrases: []
+  - id: skill_internet
+    text: Fluent in Internet
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: What does 'fluent in Internet' mean?
+      answer: 'I speak fluent meme. For example: {i_lol}.'
+      demeanor: 1
+      phrases:
+      - id: i_lol
+        text: '''lol'''
+        isContradiction: 0
+        callOutResponse: Also 'rofl'. And 'yeet'. I am extremely current.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Internet fluency is essential.
+      answer: I've been online since the year 2000. I've seen things. Terrible, hilarious
+        things.
+      demeanor: 1
+      phrases: []
+  - id: ref
+    text: His Lordship, the Grand Duke of Hashtags (also me)
+    isSuspicious: 1
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: Your reference is... also you?
+      answer: Who better to judge greatness than greatness itself?
+      demeanor: 1
+      phrases: []
+    goodQuestion:
+      question: Your reference speaks highly of you, I'm sure.
+      answer: He adores me. We have breakfast together every morning. In the mirror.
+      demeanor: 1
+      phrases: []
+  referenceLetter: 'Hear ye, hear ye,
+
+
+    It is my great honour to recommend Sir
+    Reginald Pompington III. He is {rl_greatness}. He {rl_knight}.
+
+
+    Signed,
+
+    His
+    Lordship, the Grand Duke of Hashtags
+
+    (also Sir Reginald Pompington III)'
+  referenceLetterClaims:
+  - id: rl_greatness
+    text: greatness itself
+    isSuspicious: 1
+    category: 5
+    designerNote: Self-written.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_knight
+    text: was knighted at the Renaissance Faire
+    isSuspicious: 1
+    category: 5
+    designerNote: Cosplay, not credentials.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>His Lordship:</b> Ahem. His Lordship, the Grand Duke
+    of Hashtags, speaking.
+
+
+    <b>You:</b> This sounds like Reginald.
+
+
+    <b>His
+    Lordship:</b> {rc_voice}. Sir Reginald is {rc_marvel}. Do give him the job.'
+  referenceCheckClaims:
+  - id: rc_voice
+    text: Nonsense. A coincidence of voice
+    isSuspicious: 1
+    category: 5
+    designerNote: He's lying.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_marvel
+    text: a marvel to behold
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: 21300000, guid: 6c01983f513a4a719e926308eb58b1c0, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: -7683998977028349246, guid: 8859825e92abe4242bea5e5942ad4639, type: 3}
+  - demeanor: 2
+    sprite: {fileID: -237454457437297936, guid: 8859825e92abe4242bea5e5942ad4639, type: 3}
+  - demeanor: 3
+    sprite: {fileID: -4937059185667362026, guid: 8859825e92abe4242bea5e5942ad4639, type: 3}
+  - demeanor: 4
+    sprite: {fileID: -6562516272669895914, guid: 8859825e92abe4242bea5e5942ad4639, type: 3}
+  - demeanor: 5
+    sprite: {fileID: -698206748, guid: 8859825e92abe4242bea5e5942ad4639, type: 3}
+  portraitTint: {r: 1, g: 0.95, b: 0.8, a: 1}
+  hiredMemo: Sir Reginald demands a trumpet fanfare before entering meetings. He
+    has posted 400 times; every post is a picture of himself. We gained 2 followers
+    and lost 9. One of the new followers is his mother. Morale is... interesting.
+  hirePerformance: 0
+  rejectedMemo: Sir Reginald has 'banished' Synergix from his kingdom. His kingdom
+    is a basement.

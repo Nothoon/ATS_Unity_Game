@@ -1,0 +1,334 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: AlexMorgan
+  m_EditorClassIdentifier: 
+  applicantName: Alex Morgan
+  body: '<b>ALEX MORGAN</b>
+
+    Applying for: Junior Gameplay Programmer
+
+
+    <b>EXPERIENCE</b>
+
+    {title_pixelforge}
+    - PixelForge Studios
+
+    {dates_pixelforge}
+
+
+    Junior Developer - Brightline
+    Games
+
+    {dates_brightline}
+
+
+    <b>SKILLS</b>
+
+    {skill_csharp}, {skill_unity},
+    debugging
+
+
+    <b>CERTIFICATIONS</b>
+
+    {cert_unity}
+
+
+    <b>REFERENCES</b>
+
+    {reference}'
+  claims:
+  - id: title_pixelforge
+    text: Lead Software Architect
+    isSuspicious: 1
+    category: 2
+    designerNote: Exaggerated title for someone with ~3 years of junior experience.
+    suspiciousQuestion:
+      question: Your title was Lead Software Architect. What did that involve?
+      answer: Oh, the usual architect stuff. I {t_junior}, mostly fixing bugs. And
+        I {t_meetings}.
+      demeanor: 2
+      phrases:
+      - id: t_junior
+        text: was the most junior person on the team
+        isContradiction: 1
+        callOutResponse: ...Okay. The title was more of a vibe. My manager said I
+          could call myself whatever I wanted on LinkedIn.
+        callOutDemeanor: 3
+      - id: t_meetings
+        text: went to a lot of meetings
+        isContradiction: 0
+        callOutResponse: So many meetings. Architects love meetings. That part is
+          100% true.
+        callOutDemeanor: 2
+    goodQuestion:
+      question: Lead Software Architect is impressive. Tell me more about it.
+      answer: Thanks! I, uh, mostly did programming and debugging, honestly.
+      demeanor: 5
+      phrases: []
+  - id: dates_pixelforge
+    text: Mar 2021 - Aug 2024
+    isSuspicious: 1
+    category: 1
+    designerNote: Overlaps with the Brightline Games job (2021-2022).
+    suspiciousQuestion:
+      question: Your PixelForge dates overlap with Brightline Games. Were you working
+        two jobs?
+      answer: That's a typo! I started at PixelForge right after I left Brightline
+        {d_2020}.
+      demeanor: 3
+      phrases:
+      - id: d_2020
+        text: in 2020
+        isContradiction: 1
+        callOutResponse: 2022! I meant 2022. Numbers are hard. I'm a programmer,
+          not a... number person.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: So you were at PixelForge until 2024?
+      answer: Yes, until the company moved to another state.
+      demeanor: 1
+      phrases: []
+  - id: dates_brightline
+    text: Jan 2019 - Jun 2022
+    isSuspicious: 0
+    category: 1
+    designerNote: 
+    suspiciousQuestion:
+      question: Why did you leave Brightline Games?
+      answer: I wanted to move into {b_gameplay}, and Brightline only made tools.
+      demeanor: 0
+      phrases:
+      - id: b_gameplay
+        text: gameplay programming
+        isContradiction: 0
+        callOutResponse: Yes? Gameplay programming. That's... the job I'm applying
+          for.
+        callOutDemeanor: 0
+    goodQuestion:
+      question: How was your time at Brightline Games?
+      answer: Great team. I learned most of what I know there.
+      demeanor: 1
+      phrases: []
+  - id: skill_csharp
+    text: C#
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: How much C# have you actually written?
+      answer: Plenty. Gameplay scripts, editor tools, a whole save system. Ask me
+        anything.
+      demeanor: 1
+      phrases: []
+    goodQuestion:
+      question: What's your favourite thing you've built in C#?
+      answer: A save system for a small RPG. It was a fun puzzle to get right.
+      demeanor: 1
+      phrases: []
+  - id: skill_unity
+    text: Unity
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: Have you really shipped anything in Unity?
+      answer: A couple of small game jam games. Nothing commercial, but they're finished.
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: Tell me about your Unity projects.
+      answer: Mostly small jam projects. I handled the programming and debugging.
+      demeanor: 1
+      phrases: []
+  - id: cert_unity
+    text: Unity Certified Expert - Programmer
+    isSuspicious: 1
+    category: 3
+    designerNote: No certification ID listed; expert-level cert is unlikely for a
+      junior.
+    suspiciousQuestion:
+      question: Can you give me the ID for your Unity Expert certification?
+      answer: I... don't have it on me. I'm pretty sure I passed. Mostly sure.
+      demeanor: 3
+      phrases: []
+    goodQuestion:
+      question: An Expert certification, nice. When did you take it?
+      answer: A while ago. I don't really remember exactly when.
+      demeanor: 5
+      phrases: []
+  - id: reference
+    text: Jordan Morgan, former manager
+    isSuspicious: 1
+    category: 5
+    designerNote: 'Same surname as the applicant: actually their mom.'
+    suspiciousQuestion:
+      question: Jordan Morgan has the same last name as you. Are you related?
+      answer: That's a coincidence! Morgan is a {r_common} name. Why would you even
+        ask that?
+      demeanor: 4
+      phrases:
+      - id: r_common
+        text: really common
+        isContradiction: 0
+        callOutResponse: It IS common! There are like... several of us!
+        callOutDemeanor: 4
+    goodQuestion:
+      question: Can Jordan Morgan vouch for your work?
+      answer: Absolutely. Jordan has known me {r_life} career.
+      demeanor: 2
+      phrases:
+      - id: r_life
+        text: my whole li- my whole
+        isContradiction: 1
+        callOutResponse: ...my whole LIFE. Fine. Jordan is my mom. She was a very
+          good manager, though.
+        callOutDemeanor: 3
+  referenceLetter: 'To whom it may concern,
+
+
+    Alex worked on my team at PixelForge
+    Studios. Alex is reliable, kind and {rl_punctual}.
+
+
+    I have {rl_known}, and
+    in that time I have never seen Alex give up on a bug. Alex still visits {rl_dinner}.
+
+
+    Sincerely,
+
+    Jordan
+    Morgan'
+  referenceLetterClaims:
+  - id: rl_punctual
+    text: always on time
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_known
+    text: known Alex for over 25 years
+    isSuspicious: 1
+    category: 5
+    designerNote: A manager of 3 years has not known them 25.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_dinner
+    text: every Sunday for dinner
+    isSuspicious: 1
+    category: 5
+    designerNote: Colleagues don't usually eat Sunday dinner together. It's the mom.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Jordan Morgan:</b> Hello? Oh! Is this about Alex?
+    Wonderful. Yes, I was Alex''s manager.
+
+
+    <b>You:</b> How long did Alex work
+    for you?
+
+
+    <b>Jordan Morgan:</b> {rc_always}. And I am {rc_proud} of that
+    kid. I {rc_diapers} - I mean, I trained Alex personally.
+
+
+    <b>Jordan Morgan:</b>
+    Is Alex eating? Sorry. Is Alex... employed? Please hire Alex.'
+  referenceCheckClaims:
+  - id: rc_always
+    text: Oh, forever
+    isSuspicious: 1
+    category: 5
+    designerNote: Vague. Doesn't match the dates on the resume.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_proud
+    text: so proud
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_diapers
+    text: changed
+    isSuspicious: 1
+    category: 5
+    designerNote: Slip of the tongue. Alex's mom.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: -8787443038516937802, guid: 5235cb29294e0f447af50ff91d50f892, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: -2911341542710824064, guid: 5235cb29294e0f447af50ff91d50f892, type: 3}
+  - demeanor: 2
+    sprite: {fileID: -2184698531301797185, guid: 5235cb29294e0f447af50ff91d50f892, type: 3}
+  - demeanor: 3
+    sprite: {fileID: -3409637147920650772, guid: 5235cb29294e0f447af50ff91d50f892, type: 3}
+  - demeanor: 4
+    sprite: {fileID: 1447516584841105459, guid: 5235cb29294e0f447af50ff91d50f892, type: 3}
+  - demeanor: 5
+    sprite: {fileID: 443223874, guid: 5235cb29294e0f447af50ff91d50f892, type: 3}
+  portraitTint: {r: 1, g: 1, b: 1, a: 1}
+  hiredMemo: Alex's 'architecture' turned out to be one 9,000-line script called
+    Game_FINAL_final2.cs. It works, technically. Nobody is allowed to touch it. Alex's
+    mom has called twice to ask how Alex is doing.
+  hirePerformance: -1
+  rejectedMemo: 

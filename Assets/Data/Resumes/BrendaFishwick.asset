@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: BrendaFishwick
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Brenda Fishwick
+  body: '<b>BRENDA FISHWICK</b>
+
+    Applying for: Office Manager
+
+
+    <b>EXPERIENCE</b>
+
+    {title}
+    - Dunwell Paper Co.
+
+    {dates}
+
+    Managed an office of {office_size}
+
+
+    <b>CERTIFICATIONS</b>
+
+    {cert}
+
+
+    <b>SKILLS</b>
+
+    Scheduling,
+    {skill_fridge}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: title
+    text: Supreme Office Overlord
+    isSuspicious: 1
+    category: 2
+    designerNote: Breaks rule 5 on paper, but it's a joke title. She's an honest,
+      great hire.
+    suspiciousQuestion:
+      question: '''Supreme Office Overlord''? With three years of experience?'
+      answer: Oh dear. That's {o_nickname}. My official title is {o_official}. I
+        should have fixed that.
+      demeanor: 2
+      phrases:
+      - id: o_nickname
+        text: what my coworkers called me
+        isContradiction: 0
+        callOutResponse: After I organized the supply closet by color, they started
+          bowing when I walked in. It got out of hand.
+        callOutDemeanor: 2
+      - id: o_official
+        text: Office Coordinator
+        isContradiction: 0
+        callOutResponse: I can show you my pay stub. It says Coordinator. In very
+          small font.
+        callOutDemeanor: 2
+    goodQuestion:
+      question: Supreme Office Overlord sounds powerful.
+      answer: It's a long story involving a label maker. I regret nothing.
+      demeanor: 1
+      phrases: []
+  - id: dates
+    text: Jun 2023 - Present
+    isSuspicious: 0
+    category: 1
+    designerNote: 
+    suspiciousQuestion:
+      question: Are these dates accurate?
+      answer: To the day. I have a {d_cal} for everything.
+      demeanor: 1
+      phrases:
+      - id: d_cal
+        text: color-coded calendar
+        isContradiction: 0
+        callOutResponse: It's color-coded by mood. Today is teal.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Three years at Dunwell. How was it?
+      answer: Lovely. Except for the paper cuts. So many paper cuts.
+      demeanor: 0
+      phrases: []
+  - id: office_size
+    text: 40 people (and one ghost)
+    isSuspicious: 0
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: ...One ghost?
+      answer: Gerald. He {g_stapler}. We came to an understanding.
+      demeanor: 1
+      phrases:
+      - id: g_stapler
+        text: kept stealing the staplers
+        isContradiction: 0
+        callOutResponse: I bought him his own stapler. Problem solved. Ghosts just
+          want to feel included.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Managing 40 people is a lot.
+      answer: 41, counting Gerald. But he's very low maintenance.
+      demeanor: 1
+      phrases: []
+  - id: cert
+    text: 'Certified Spreadsheet Wizard (ID: XL-4420)'
+    isSuspicious: 0
+    category: 3
+    designerNote: 
+    suspiciousQuestion:
+      question: Is that certification real?
+      answer: Yes, the ID is XL-4420. The exam was {c_hard}.
+      demeanor: 1
+      phrases:
+      - id: c_hard
+        text: four hours of pivot tables
+        isContradiction: 0
+        callOutResponse: Four hours. Two people fainted. I did not.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: Spreadsheet Wizard! What's your favorite formula?
+      answer: VLOOKUP. Don't tell XLOOKUP.
+      demeanor: 1
+      phrases: []
+  - id: skill_fridge
+    text: Fridge Diplomacy
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: What is 'Fridge Diplomacy'?
+      answer: Negotiating whose yogurt is whose. I once {f_peace}.
+      demeanor: 1
+      phrases:
+      - id: f_peace
+        text: ended a six-month lunch war
+        isContradiction: 0
+        callOutResponse: There were sticky notes. There were threats. Now there is
+          a labelled shelf system, and peace.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: We need Fridge Diplomacy. Badly.
+      answer: I can tell. I smelled your break room from the lobby.
+      demeanor: 1
+      phrases: []
+  - id: ref
+    text: Harold Dunwell, owner of Dunwell Paper Co.
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: Is Harold Dunwell related to you?
+      answer: No! He's my boss. He's {h_age} and still comes in every day.
+      demeanor: 0
+      phrases:
+      - id: h_age
+        text: 92
+        isContradiction: 0
+        callOutResponse: He says paper keeps him young. He may be right.
+        callOutDemeanor: 0
+    goodQuestion:
+      question: Will Harold vouch for you?
+      answer: He wrote me a letter. On very nice paper. He insisted.
+      demeanor: 1
+      phrases: []
+  referenceLetter: 'To whom it may concern,
+
+
+    Brenda ran my paper company''s
+    office for {rl_years}. She {rl_fridge}, which no one before her managed.
+
+
+    I
+    would {rl_rehire}.
+
+
+    Harold Dunwell
+
+    Owner, Dunwell Paper Co.
+
+    (Printed
+    on our best paper.)'
+  referenceLetterClaims:
+  - id: rl_years
+    text: eleven years
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_fridge
+    text: kept the office fridge free of stolen lunches
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_rehire
+    text: hire her again in a heartbeat
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Harold Dunwell:</b> Dunwell Paper! Speak up, I''m
+    ninety-two.
+
+
+    <b>You:</b> I''m calling about Brenda Fishwick.
+
+
+    <b>Harold
+    Dunwell:</b> Brenda! {rc_best}. Never missed a deadline. {rc_complaint}. Please
+    don''t take her, I''ll have to learn the printer again.'
+  referenceCheckClaims:
+  - id: rc_best
+    text: Best office manager I've had in sixty years
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_complaint
+    text: Only complaint is she reorganised my desk
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: -4769662652845312003, guid: b4413f3f4f8f5974d9bdd21eef0c5e4a, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: -4126021328430079433, guid: b4413f3f4f8f5974d9bdd21eef0c5e4a, type: 3}
+  - demeanor: 2
+    sprite: {fileID: -3484142284897763181, guid: b4413f3f4f8f5974d9bdd21eef0c5e4a, type: 3}
+  - demeanor: 3
+    sprite: {fileID: 6926019690709369834, guid: b4413f3f4f8f5974d9bdd21eef0c5e4a, type: 3}
+  - demeanor: 4
+    sprite: {fileID: -6309547127852046293, guid: b4413f3f4f8f5974d9bdd21eef0c5e4a, type: 3}
+  - demeanor: 5
+    sprite: {fileID: 3807677600746853311, guid: b4413f3f4f8f5974d9bdd21eef0c5e4a, type: 3}
+  portraitTint: {r: 1, g: 0.88, b: 0.9, a: 1}
+  hiredMemo: Brenda has organized the supply closet by color, ended the Great Fridge
+    War, and reached a peace agreement with whatever lives in the vents. People have
+    started bowing when she walks past. Productivity is up 30%.
+  hirePerformance: 2
+  rejectedMemo: Brenda Fishwick sent you a thank-you card anyway. It was beautifully
+    organized.

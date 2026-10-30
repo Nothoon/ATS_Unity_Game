@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a59edd873557e89488dca74978f5953c, type: 3}
+  m_Name: Day1
+  m_EditorClassIdentifier: Assembly-CSharp::DayData
+  positionTitle: Junior Gameplay Programmer
+  jobDescription: Write gameplay code in Unity and C#. Fix bugs. Do not set the build
+    server on fire again.
+  bossMemo: 'Welcome aboard! I''m Dale, Regional Manager of Hiring Excellence.
+
+
+    Our
+    last junior programmer left after an ''incident'' with the coffee machine. Find
+    me a replacement. Read the hiring manual. Trust no one.
+
+
+    There are donuts
+    in the break room. They are for clients.
+
+
+    - Dale'
+  newRules:
+  - Applicants need at least 2 years of relevant experience.
+  - Employment dates must not overlap, and must not be in the future.
+  - References must not be family members.
+  applicants:
+  - {fileID: 11400000, guid: 2c1e6e8587a4470f9035bf85d6f8cd42, type: 2}
+  - {fileID: 11400000, guid: 7b39ff4bffdc72f438d47ee5ec33c9c4, type: 2}
+  - {fileID: 11400000, guid: ff7dcbc426273c4438fbb96151d99d4a, type: 2}

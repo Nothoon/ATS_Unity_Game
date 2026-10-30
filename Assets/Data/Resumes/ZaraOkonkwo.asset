@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: ZaraOkonkwo
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Zara Okonkwo
+  body: '<b>ZARA OKONKWO</b>
+
+    Applying for: Vice President of Everything
+
+
+    <b>EXPERIENCE</b>
+
+    {title}
+    - Brightwave Industries
+
+    {dates}
+
+    {achievement}
+
+
+    <b>EDUCATION</b>
+
+    {edu}
+
+
+    <b>SKILLS</b>
+
+    {skill_meetings}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: title
+    text: Chief Operating Officer
+    isSuspicious: 0
+    category: 2
+    designerNote: 
+    suspiciousQuestion:
+      question: COO is a big job. What did you actually do?
+      answer: I ran daily operations for {o_people} people. I also {o_meetings}.
+      demeanor: 1
+      phrases:
+      - id: o_people
+        text: 3,000
+        isContradiction: 0
+        callOutResponse: Three thousand. I knew most of their names. And all of their
+          birthdays.
+        callOutDemeanor: 1
+      - id: o_meetings
+        text: cancelled every meeting that could have been an email
+        isContradiction: 0
+        callOutResponse: It saved the company 40,000 hours a year. Productivity doubled.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: COO experience is exactly what we need.
+      answer: And I'm ready to do it again. Ideally with fewer people crying in the
+        elevator.
+      demeanor: 1
+      phrases: []
+  - id: dates
+    text: 2014 - 2026
+    isSuspicious: 0
+    category: 1
+    designerNote: 
+    suspiciousQuestion:
+      question: Why leave Brightwave after 12 years?
+      answer: Competitor Corp bought them. Their first order was to {c_rename}. I
+        quit that afternoon.
+      demeanor: 0
+      phrases:
+      - id: c_rename
+        text: rename every meeting room after their CEO
+        isContradiction: 0
+        callOutResponse: There were 40 rooms called 'Greg'. I couldn't do it.
+        callOutDemeanor: 0
+    goodQuestion:
+      question: Twelve years shows loyalty.
+      answer: I believe in finishing what I start. Even this sentence.
+      demeanor: 1
+      phrases: []
+  - id: achievement
+    text: Grew revenue 300% in 5 years
+    isSuspicious: 0
+    category: 0
+    designerNote: Sounds too good, but she has the receipts.
+    suspiciousQuestion:
+      question: 300% revenue growth. That sounds too good to be true.
+      answer: It does! I {r_report}. Most of it came from {r_product}.
+      demeanor: 1
+      phrases:
+      - id: r_report
+        text: brought the annual reports
+        isContradiction: 0
+        callOutResponse: Here. Page 12. The big green arrow is me.
+        callOutDemeanor: 1
+      - id: r_product
+        text: selling umbrellas to a very rainy country
+        isContradiction: 0
+        callOutResponse: Very rainy. Very grateful.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: 300% growth is incredible.
+      answer: Thank you. It took a lot of spreadsheets. And one very good umbrella.
+      demeanor: 1
+      phrases: []
+  - id: edu
+    text: MBA, Westbridge School of Business
+    isSuspicious: 0
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: Is your MBA from a real school?
+      answer: Westbridge, class of 2010. I still have the {m_debt}.
+      demeanor: 1
+      phrases:
+      - id: m_debt
+        text: student debt
+        isContradiction: 0
+        callOutResponse: Just kidding. I paid it off. It took a while.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: An MBA. Solid.
+      answer: I graduated top of my class. Second place still sends me angry emails.
+      demeanor: 1
+      phrases: []
+  - id: skill_meetings
+    text: Shortening meetings
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: How do you 'shorten meetings'?
+      answer: Everyone stands. No chairs. Meetings end very quickly when everyone's
+        {s_legs}.
+      demeanor: 1
+      phrases:
+      - id: s_legs
+        text: legs get tired
+        isContradiction: 0
+        callOutResponse: Fifteen minutes, maximum. People call it 'the Zara Rule'.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: We desperately need shorter meetings.
+      answer: I noticed. Your lobby has a sign that says 'Meeting in Progress' and
+        it's covered in dust.
+      demeanor: 1
+      phrases: []
+  - id: ref
+    text: Marcus Chen, former CEO of Brightwave
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: Will Brightwave's former CEO really vouch for you?
+      answer: Marcus? He has {m_tried} to hire me back.
+      demeanor: 1
+      phrases:
+      - id: m_tried
+        text: tried three times
+        isContradiction: 0
+        callOutResponse: Four, actually. He sends fruit baskets. I'm not going back.
+        callOutDemeanor: 1
+    goodQuestion:
+      question: A CEO reference is strong.
+      answer: Marcus will tell you I'm stubborn. He's right. I'm stubborn about doing
+        things well.
+      demeanor: 1
+      phrases: []
+  referenceLetter: 'To whom it may concern,
+
+
+    Zara was {rl_best} I have worked
+    with in thirty years. She turned a failing division around in {rl_months}.
+
+
+    I
+    have tried to hire her back {rl_fruit}. She keeps refusing.
+
+
+    Marcus Chen
+
+    Former
+    CEO, Brightwave Industries'
+  referenceLetterClaims:
+  - id: rl_best
+    text: the best executive
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_months
+    text: eight months
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_fruit
+    text: four times and sent fruit baskets
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Marcus Chen:</b> Marcus Chen.
+
+
+    <b>You:</b> I''m
+    calling about Zara Okonkwo.
+
+
+    <b>Marcus Chen:</b> Zara! {rc_stubborn}. Best
+    decision I ever made was hiring her. Worst was letting her go. {rc_back}.'
+  referenceCheckClaims:
+  - id: rc_stubborn
+    text: She's stubborn
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_back
+    text: If she's there, tell her the offer stands
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: -4017552507802409415, guid: 0a7f3b98192ce634ebc6422c89fe0b97, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: 3522406400561916058, guid: 0a7f3b98192ce634ebc6422c89fe0b97, type: 3}
+  - demeanor: 2
+    sprite: {fileID: -129560910845426107, guid: 0a7f3b98192ce634ebc6422c89fe0b97, type: 3}
+  - demeanor: 3
+    sprite: {fileID: 6364356204780623018, guid: 0a7f3b98192ce634ebc6422c89fe0b97, type: 3}
+  - demeanor: 4
+    sprite: {fileID: 3514946829364492864, guid: 0a7f3b98192ce634ebc6422c89fe0b97, type: 3}
+  - demeanor: 5
+    sprite: {fileID: 1359960937941234935, guid: 0a7f3b98192ce634ebc6422c89fe0b97, type: 3}
+  portraitTint: {r: 0.95, g: 0.9, b: 0.85, a: 1}
+  hiredMemo: Zara cancelled 80% of all meetings. Profits are up 200%. She found the
+    missing yacht, sold it, and used the money to give everyone a raise. Dale cried.
+    The stock price is so high we had to buy a taller building to fit the chart.
+  hirePerformance: 3
+  rejectedMemo: Zara Okonkwo is now VP at Competitor Corp. They renamed every meeting
+    room 'Zara'. It is going very well for them.

@@ -1,0 +1,281 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: PriyaPatel
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Priya Patel
+  body: '<b>PRIYA PATEL</b>
+
+    Applying for: Junior Gameplay Programmer
+
+
+    <b>EXPERIENCE</b>
+
+    Gameplay
+    Programmer - Honkworks Interactive
+
+    {dates_honk}
+
+    Shipped: {shipped_goose}
+
+
+    <b>SKILLS</b>
+
+    {skill_csharp},
+    Unity, {skill_shaders}
+
+
+    <b>EDUCATION</b>
+
+    {edu}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: dates_honk
+    text: Feb 2023 - Present
+    isSuspicious: 0
+    category: 1
+    designerNote: 
+    suspiciousQuestion:
+      question: You're still at Honkworks. Why leave?
+      answer: They make everyone {h_honk} at the start of every meeting. I'm ready
+        for a quieter studio.
+      demeanor: 2
+      phrases:
+      - id: h_honk
+        text: honk
+        isContradiction: 0
+        callOutResponse: I wish I was joking. There's a honk-off at the Christmas
+          party. I came second.
+        callOutDemeanor: 2
+    goodQuestion:
+      question: Three years at Honkworks, nice. What did you work on?
+      answer: Mostly goose AI. Making geese angry in a believable way is harder than
+        it sounds.
+      demeanor: 1
+      phrases: []
+  - id: shipped_goose
+    text: 'Goose Simulator 3: Honk Harder'
+    isSuspicious: 0
+    category: 0
+    designerNote: Sounds absurd, but it is true. A good mark here is correct.
+    suspiciousQuestion:
+      question: '''Goose Simulator 3: Honk Harder''? Is that a real game?'
+      answer: It's real! It sold {g_sales}. I'm in the credits as {g_credit}.
+      demeanor: 2
+      phrases:
+      - id: g_sales
+        text: two million copies
+        isContradiction: 0
+        callOutResponse: It's a big goose community. Very passionate. Slightly scary.
+        callOutDemeanor: 2
+      - id: g_credit
+        text: Senior Goose Behavior Engineer
+        isContradiction: 0
+        callOutResponse: That's what the credits say! My real title was Junior Programmer.
+          The geese got the senior titles.
+        callOutDemeanor: 2
+    goodQuestion:
+      question: Tell me about Goose Simulator 3.
+      answer: I programmed the honk system. Every honk is procedurally generated.
+        No two honks are the same.
+      demeanor: 1
+      phrases: []
+  - id: skill_csharp
+    text: C# (3 years)
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: Prove you know C#. What's a null reference?
+      answer: It's when you {n_ask} for something that isn't there. Like asking my
+        old manager for a raise.
+      demeanor: 2
+      phrases:
+      - id: n_ask
+        text: ask
+        isContradiction: 0
+        callOutResponse: ...It was a joke. About the raise. I do know C#. Please.
+        callOutDemeanor: 2
+    goodQuestion:
+      question: How do you like C#?
+      answer: I love it. I have a C# sticker on my laptop. And my car. And my cat's
+        carrier.
+      demeanor: 1
+      phrases: []
+  - id: skill_shaders
+    text: Shader programming
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: Shaders are hard. Do you actually know shader programming?
+      answer: A little. I {s_wrote} for the geese. It's not my strongest skill, but
+        I'm learning.
+      demeanor: 2
+      phrases:
+      - id: s_wrote
+        text: wrote the feather shader
+        isContradiction: 0
+        callOutResponse: I did! It's why the geese look so fluffy and menacing.
+        callOutDemeanor: 2
+    goodQuestion:
+      question: Shaders! What have you made?
+      answer: A feather shader. The geese shimmer menacingly in the sunlight.
+      demeanor: 1
+      phrases: []
+  - id: edu
+    text: B.Sc. Computer Science, Riverside University (2022)
+    isSuspicious: 0
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: Did you actually finish your degree?
+      answer: Yes, in 2022. I {e_cried} at the ceremony.
+      demeanor: 2
+      phrases:
+      - id: e_cried
+        text: cried a normal amount
+        isContradiction: 0
+        callOutResponse: Okay, a lot. My mom cried more. The dean also cried. It
+          was a lot of crying.
+        callOutDemeanor: 2
+    goodQuestion:
+      question: Tell me about university.
+      answer: I studied computer science and ran the game dev club. We made a game
+        about a sad potato.
+      demeanor: 1
+      phrases: []
+  - id: ref
+    text: Dana Reyes, Lead Programmer at Honkworks
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: Is Dana Reyes a real person?
+      answer: Yes! Dana was my lead. You can call her. She'll probably honk first,
+        it's a company thing.
+      demeanor: 2
+      phrases: []
+    goodQuestion:
+      question: Will Dana Reyes speak well of you?
+      answer: I think so. I fixed the bug where the geese flew backwards. She was
+        very grateful.
+      demeanor: 1
+      phrases: []
+  referenceLetter: 'To whom it may concern,
+
+
+    Priya was a gameplay programmer
+    on my team at Honkworks Interactive. She fixed {rl_geese} and shipped on time.
+
+
+    I
+    would {rl_hire}. Honk.
+
+
+    Dana Reyes
+
+    Lead Programmer, Honkworks'
+  referenceLetterClaims:
+  - id: rl_geese
+    text: the bug where the geese flew backwards
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_hire
+    text: gladly work with her again
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Dana Reyes:</b> HONK. Sorry, company policy. Dana
+    Reyes.
+
+
+    <b>You:</b> I''m calling about Priya Patel.
+
+
+    <b>Dana Reyes:</b>
+    {rc_priya}. {rc_geese}. She was great. Honk.'
+  referenceCheckClaims:
+  - id: rc_priya
+    text: Priya! She was great
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_geese
+    text: She fixed the geese
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: 2056736114435124540, guid: b18743308054fcb438287249866f214a, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: -8176032339322600875, guid: b18743308054fcb438287249866f214a, type: 3}
+  - demeanor: 2
+    sprite: {fileID: -8723029792546302156, guid: b18743308054fcb438287249866f214a, type: 3}
+  - demeanor: 3
+    sprite: {fileID: 4251249549763218314, guid: b18743308054fcb438287249866f214a, type: 3}
+  - demeanor: 4
+    sprite: {fileID: 2517629897554661804, guid: b18743308054fcb438287249866f214a, type: 3}
+  - demeanor: 5
+    sprite: {fileID: 1838478945, guid: b18743308054fcb438287249866f214a, type: 3}
+  portraitTint: {r: 1, g: 0.92, b: 0.85, a: 1}
+  hiredMemo: Priya fixed 212 bugs in her first week. She also fixed the coffee machine,
+    the printer and, somehow, Dale. Morale is up 40%. She does honk at the start
+    of meetings now. It's catching on.
+  hirePerformance: 2
+  rejectedMemo: Priya Patel was hired by Competitor Corp. Their stock went up 3%.
+    They now honk at the start of meetings.

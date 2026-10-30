@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1becf5add4cbeca45879caf75702f4e3, type: 3}
+  m_Name: Campaign
+  m_EditorClassIdentifier: Assembly-CSharp::CampaignData
+  companyName: Synergix Global Solutions
+  days:
+  - {fileID: 11400000, guid: 0b0cc2d845632fe4fbd76ae5a5f51aca, type: 2}
+  - {fileID: 11400000, guid: 46dbfc8429bb1624282b5dc449948012, type: 2}
+  - {fileID: 11400000, guid: 5008cb8c6bcdd304d8f697959cbc5a2e, type: 2}
+  - {fileID: 11400000, guid: 74d515c4a3286e048b2b3cec8db1a974, type: 2}
+  - {fileID: 11400000, guid: e76e338515979f349b7c34409a20ace8, type: 2}
+  emptyPositionMemo: Nobody was hired today, so Dale tried to do the job himself.
+    It went about as well as you'd expect. We'd rather not talk about it. Please
+    hire someone next time.
+  emptyPositionPerformance: -1
+  endings:
+  - minScore: 9
+    title: The Synergix Tower
+    text: 'You hired a legendary team. Synergix is now the tallest building in the
+      city. There''s a helipad. There''s a smoothie bar. There''s a statue of you
+      in the lobby, and only one raccoon lives in it.
+
+
+      Dale cries every morning,
+      but they''re happy tears. You''ve been promoted to Supreme Hiring Overlord.'
+  - minScore: 4
+    title: Steady Growth
+    text: 'Synergix is doing well. The office got new chairs, the coffee machine
+      works, and the stock price went up a little. Nobody writes songs about it,
+      but nobody gets sued either.
+
+
+      Dale gives you a thumbs up every morning.
+      It''s a little weird.'
+  - minScore: -1
+    title: Business as Usual
+    text: 'Synergix survived. Barely. The printer still doesn''t work, the logo is
+      still sometimes a duck, and Dale has started a ''Hope Jar''. It has two dollars
+      in it.
+
+
+      You still have your job. For now.'
+  - minScore: -6
+    title: The Dilapidated Office
+    text: 'The roof leaks, the lights flicker, and the big ''SYNERGIX'' sign now
+      just says ''S NE GIX''. Dale works from his car.
+
+
+      HR has asked you to
+      ''take a break from hiring''. Forever.'
+  - minScore: -999
+    title: Spirit Halloween
+    text: 'Synergix Global Solutions has gone out of business. The building is now
+      a Spirit Halloween.
+
+
+      Dale works there. He''s very good at it, which
+      somehow makes it worse.'

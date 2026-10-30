@@ -1,0 +1,282 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ca3afc4caf41b1b42aa68d0b30a0a2, type: 3}
+  m_Name: TrevorCoatsworth
+  m_EditorClassIdentifier: Assembly-CSharp::ResumeData
+  applicantName: Trevor Coatsworth
+  body: '<b>TREVOR COATSWORTH</b>
+
+    Applying for: Office Manager (night shift
+    preferred)
+
+
+    <b>EXPERIENCE</b>
+
+    Night Supervisor - {exp}
+
+    {dates}
+
+
+    <b>SKILLS</b>
+
+    {skill_trash}
+
+
+    <b>PERSONAL</b>
+
+    Height:
+    {height}
+
+
+    <b>REFERENCES</b>
+
+    {ref}'
+  claims:
+  - id: exp
+    text: Grand Plaza Dumpster Area
+    isSuspicious: 0
+    category: 0
+    designerNote: 
+    suspiciousQuestion:
+      question: You supervised a... dumpster area?
+      answer: Yes. I {t_organized}. Very clean. No one ever ate out of it. {t_except}.
+      demeanor: 1
+      phrases:
+      - id: t_organized
+        text: organized it
+        isContradiction: 0
+        callOutResponse: Organized by smell. Very efficient system.
+        callOutDemeanor: 1
+      - id: t_except
+        text: Except for me
+        isContradiction: 1
+        callOutResponse: I mean NO ONE. No one eats from it. Especially not three
+          small... I mean ONE normal man.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Night supervisor! Reliable work.
+      answer: I love the night. I am most awake at night. For normal human reasons.
+      demeanor: 1
+      phrases: []
+  - id: dates
+    text: Mar 2021 - Present
+    isSuspicious: 0
+    category: 1
+    designerNote: 
+    suspiciousQuestion:
+      question: Five years at the dumpster. Why leave?
+      answer: They {d_lid}. Very disrespectful.
+      demeanor: 4
+      phrases:
+      - id: d_lid
+        text: put a lock on the lid
+        isContradiction: 0
+        callOutResponse: We... I mean I... will not discuss the lock.
+        callOutDemeanor: 4
+    goodQuestion:
+      question: Five years! Very loyal.
+      answer: "Very loyal. We\u2014 I always come back. Every night. Without fail."
+      demeanor: 2
+      phrases: []
+  - id: skill_trash
+    text: Waste management (hands-on)
+    isSuspicious: 0
+    category: 4
+    designerNote: 
+    suspiciousQuestion:
+      question: What does 'hands-on' waste management mean?
+      answer: I {w_hands}. With my normal, human, not-tiny hands.
+      demeanor: 2
+      phrases:
+      - id: w_hands
+        text: sort everything by hand
+        isContradiction: 0
+        callOutResponse: They are big hands. Regular size. Please stop looking at
+          the sleeves.
+        callOutDemeanor: 2
+    goodQuestion:
+      question: Hands-on experience is great.
+      answer: So many hands. I mean two. Two hands. A normal amount.
+      demeanor: 2
+      phrases: []
+  - id: height
+    text: 6'2" (combined)
+    isSuspicious: 1
+    category: 0
+    designerNote: Trevor is three raccoons in a trench coat.
+    suspiciousQuestion:
+      question: Your height says 'combined'.
+      answer: It's a {h_typo}. I am one tall man. {h_squeak}
+      demeanor: 2
+      phrases:
+      - id: h_typo
+        text: typo
+        isContradiction: 0
+        callOutResponse: Typos happen. To regular humans like me.
+        callOutDemeanor: 2
+      - id: h_squeak
+        text: '*squeak*'
+        isContradiction: 1
+        callOutResponse: That was my shoe. My one shoe. On my two feet. Please ask
+          a different question.
+        callOutDemeanor: 3
+    goodQuestion:
+      question: Six foot two. Tall!
+      answer: Yes. Very tall. Very stable. Mostly.
+      demeanor: 2
+      phrases: []
+  - id: ref
+    text: Gary Coatsworth (not related)
+    isSuspicious: 1
+    category: 5
+    designerNote: 'Same surname: Gary is the middle raccoon.'
+    suspiciousQuestion:
+      question: Gary Coatsworth has the same last name. Are you related?
+      answer: No. Coatsworth is a very common name for {g_coats}.
+      demeanor: 5
+      phrases:
+      - id: g_coats
+        text: people who wear coats
+        isContradiction: 0
+        callOutResponse: "We\u2014 people\u2014 who wear coats. It's a big community."
+        callOutDemeanor: 5
+    goodQuestion:
+      question: Can Gary vouch for your work?
+      answer: Gary is great. Gary is also {g_inside} at home.
+      demeanor: 2
+      phrases:
+      - id: g_inside
+        text: "in the coat right n\u2014 Gary is"
+        isContradiction: 1
+        callOutResponse: ...Fine. We are three raccoons. But we are VERY good at
+          our job. Please. The dumpster has a lock now.
+        callOutDemeanor: 3
+  referenceLetter: '[A crumpled page, smudged with something.]
+
+
+    To whom it may
+    concern.
+
+
+    Trevor has {rl_nose} for {rl_garbage}. I would {rl_trust} him
+    with my life.
+
+
+    [a paw print]
+
+    Gary Coatsworth'
+  referenceLetterClaims:
+  - id: rl_nose
+    text: an excellent nose
+    isSuspicious: 1
+    category: 5
+    designerNote: A raccoon thing.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_garbage
+    text: finding the good garbage
+    isSuspicious: 1
+    category: 5
+    designerNote: Not an office skill.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rl_trust
+    text: trust
+    isSuspicious: 0
+    category: 5
+    designerNote: 
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  referenceCheckTranscript: '<b>Gary:</b> *rustling* ...Hello?
+
+
+    <b>You:</b>
+    Is this Gary Coatsworth?
+
+
+    <b>Gary:</b> {rc_yes}. Trevor is a good {rc_boy}.
+    Please hire him, we are three, and the dumpster has a lock now.'
+  referenceCheckClaims:
+  - id: rc_yes
+    text: Yes. Chitter. Yes
+    isSuspicious: 1
+    category: 5
+    designerNote: Raccoon.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  - id: rc_boy
+    text: boy. Raccoon. Person
+    isSuspicious: 1
+    category: 5
+    designerNote: Slip.
+    suspiciousQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+    goodQuestion:
+      question: 
+      answer: 
+      demeanor: 0
+      phrases: []
+  neutralPortrait: {fileID: -1768375194642831141, guid: 1a68e6b832d96144abf9212677b5d4a3, type: 3}
+  portraits:
+  - demeanor: 1
+    sprite: {fileID: 3632802939290604020, guid: 1a68e6b832d96144abf9212677b5d4a3, type: 3}
+  - demeanor: 2
+    sprite: {fileID: -4730118933825904888, guid: 1a68e6b832d96144abf9212677b5d4a3, type: 3}
+  - demeanor: 3
+    sprite: {fileID: -5398633194346144451, guid: 1a68e6b832d96144abf9212677b5d4a3, type: 3}
+  - demeanor: 4
+    sprite: {fileID: 3136401105133862888, guid: 1a68e6b832d96144abf9212677b5d4a3, type: 3}
+  - demeanor: 5
+    sprite: {fileID: -8761922026411335237, guid: 1a68e6b832d96144abf9212677b5d4a3, type: 3}
+  portraitTint: {r: 0.72, g: 0.72, b: 0.78, a: 1}
+  hiredMemo: Trevor is our best night-shift employee ever. The office has never been
+    cleaner and the trash is perfectly sorted. The night guard has quit. We are missing
+    14 sandwiches and a ham. HR says no rule technically says an employee has to
+    be one person. Yet.
+  hirePerformance: 1
+  rejectedMemo: 'Someone knocked over every trash can in the parking lot. They left
+    a tiny note: ''u will regret this''.'
