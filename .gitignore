@@ -114,3 +114,5 @@ InitTestScene*.unity*
 /[Aa]ssets/[Ss]ceneDependencyCache*
 
 .vscode/
+
+*.bak
